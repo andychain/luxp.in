@@ -5,404 +5,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>luxpin</title>
+
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
-  <style>
-     
-    :root {
-      --radius: 16px;
-      --radius-sm: 9px;
-      --font-head: 'Syne', sans-serif;
-      --font-mono: 'DM Mono', monospace;
-      --font-serif: 'Cormorant Garamond', serif;
-      --transition: 0.22s cubic-bezier(.4,0,.2,1);
-      --gold: #c9a84c;
-      --gold-light: #e8c96a;
-      --gold-dim: rgba(201,168,76,0.28);
-    }
 
-    [data-theme="dark"] {
-      --bg:           #08090c;
-      --bg2:          #0f1117;
-      --bg3:          #161920;
-      --border:       rgba(201,168,76,0.13);
-      --border-hover: rgba(201,168,76,0.32);
-      --text:         #ede8df;
-      --text-muted:   #7a7060;
-      --text-dim:     #a89c88;
-      --accent:       #c9a84c;
-      --accent2:      #5ce8a4;
-      --card-bg:      #0d0f15;
-      --card-hover:   #131620;
-      --header-bg:    rgba(8,9,12,0.92);
-      --pill-bg:      rgba(201,168,76,0.07);
-      --pill-hover:   rgba(201,168,76,0.14);
-      --shadow:       0 4px 32px rgba(0,0,0,0.7);
-      --shadow-hover: 0 12px 56px rgba(0,0,0,0.88);
-      --felt:         #0a1a10;
-      --felt2:        #0c2015;
-      --chip-red:     #d94f4f;
-      --chip-blue:    #4f8fd9;
-      --chip-green:   #5ce8a4;
-      --stat-bg:      #0d0f15;
-    }
-
-    [data-theme="light"] {
-      --bg:           #ffffff;
-      --bg2:          #f7f7f7;
-      --bg3:          #f0f0f0;
-      --border:       rgba(0,0,0,0.08);
-      --border-hover: rgba(0,0,0,0.18);
-      --text:         #111111;
-      --text-muted:   #888888;
-      --text-dim:     #555555;
-      --accent:       #8c6a18;
-      --accent2:      #1a7a50;
-      --card-bg:      #ffffff;
-      --card-hover:   #fafafa;
-      --header-bg:    rgba(255,255,255,0.95);
-      --pill-bg:      rgba(0,0,0,0.04);
-      --pill-hover:   rgba(0,0,0,0.08);
-      --shadow:       0 2px 16px rgba(0,0,0,0.07);
-      --shadow-hover: 0 8px 32px rgba(0,0,0,0.12);
-      --felt:         #e8f0e4;
-      --felt2:        #d4e6ca;
-      --chip-red:     #c43030;
-      --chip-blue:    #2060b8;
-      --chip-green:   #1a7a50;
-      --stat-bg:      #ffffff;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: var(--font-head);
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      transition: background var(--transition), color var(--transition);
-      -webkit-font-smoothing: antialiased;
-    }
-
-     
-    header {
-      position: sticky; top: 0; z-index: 100;
-      background: var(--header-bg);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(24px) saturate(160%);
-      -webkit-backdrop-filter: blur(24px) saturate(160%);
-      height: 60px;
-      display: flex; align-items: center;
-      padding: 0 24px; gap: 14px;
-      transition: background var(--transition), border-color var(--transition);
-    }
-    .logo {
-      font-family: var(--font-head); font-weight: 800;
-      font-size: 1.18rem; letter-spacing: -0.04em;
-      color: var(--text); text-decoration: none;
-      display: flex; align-items: center; gap: 7px; flex-shrink: 0;
-    }
-    .logo-gem {
-      width: 18px; height: 18px;
-      background: linear-gradient(135deg, var(--gold-light), var(--gold));
-      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    }
-    .header-spacer { flex: 1; }
-    .nav-tabs {
-      display: flex; gap: 2px;
-      background: var(--pill-bg); border: 1px solid var(--border);
-      border-radius: 24px; padding: 3px;
-    }
-    .nav-tab {
-      padding: 5px 14px; border-radius: 20px;
-      font-size: 0.74rem; font-weight: 600;
-      cursor: pointer; color: var(--text-muted);
-      background: transparent; border: none;
-      transition: all var(--transition); font-family: var(--font-head);
-    }
-    .nav-tab.active { background: var(--card-bg); color: var(--text); box-shadow: 0 1px 6px rgba(0,0,0,0.25); }
-    .nav-tab:hover:not(.active) { color: var(--text-dim); }
-
-    .country-switcher { position: relative; }
-    .country-btn {
-      display: flex; align-items: center; gap: 7px;
-      background: var(--pill-bg); border: 1px solid var(--border);
-      border-radius: 24px; padding: 6px 13px 6px 10px;
-      cursor: pointer; font-family: var(--font-head);
-      font-size: 0.77rem; font-weight: 600; color: var(--text);
-      transition: background var(--transition), border-color var(--transition);
-      white-space: nowrap;
-    }
-    .country-btn:hover { background: var(--pill-hover); border-color: var(--border-hover); }
-    .country-chevron { font-size: 0.6em; opacity: 0.4; transition: transform var(--transition); }
-    .country-switcher.open .country-chevron { transform: rotate(180deg); }
-    .country-dropdown {
-      position: absolute; top: calc(100% + 8px); right: 0;
-      background: var(--bg3); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 6px; min-width: 200px;
-      box-shadow: var(--shadow);
-      opacity: 0; pointer-events: none; transform: translateY(-6px);
-      transition: opacity 0.18s ease, transform 0.18s ease; z-index: 200;
-    }
-    .country-switcher.open .country-dropdown { opacity: 1; pointer-events: all; transform: translateY(0); }
-    .country-item {
-      display: flex; align-items: center; gap: 10px;
-      padding: 9px 12px; border-radius: var(--radius-sm);
-      cursor: pointer; font-size: 0.81rem; font-weight: 500;
-      color: var(--text-dim); transition: background var(--transition), color var(--transition);
-    }
-    .country-item:hover, .country-item.active { background: var(--pill-hover); color: var(--text); }
-    .country-item.active { color: var(--accent); }
-    .country-item .code { font-family: var(--font-mono); font-size: 0.68rem; opacity: 0.5; margin-left: auto; }
-    .country-divider { height: 1px; background: var(--border); margin: 4px 0; }
-
-    .theme-toggle {
-      width: 36px; height: 36px; border-radius: 50%;
-      background: var(--pill-bg); border: 1px solid var(--border);
-      cursor: pointer; display: flex; align-items: center; justify-content: center;
-      font-size: 1rem; transition: background var(--transition), border-color var(--transition), transform 0.2s;
-      flex-shrink: 0;
-    }
-    .theme-toggle:hover { background: var(--pill-hover); border-color: var(--border-hover); transform: rotate(22deg); }
-
-     
-    .ticker-wrap {
-      overflow: hidden; border-bottom: 1px solid var(--border);
-      background: var(--bg2); padding: 9px 0;
-    }
-    .ticker { display: flex; gap: 40px; animation: ticker 32s linear infinite; white-space: nowrap; }
-    .ticker:hover { animation-play-state: paused; }
-    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    .ticker-item { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); }
-    .ticker-name { color: var(--text-dim); font-weight: 500; }
-    .ticker-up { color: #5ce8a4; }
-    .ticker-dn { color: #e85c5c; }
-    .ticker-dot { width: 3px; height: 3px; background: rgba(255,255,255,0.12); border-radius: 50%; }
-
-     
-    .hero { padding: 44px 24px 28px; max-width: 1340px; margin: 0 auto; }
-    .hero-eyebrow {
-      display: inline-flex; align-items: center; gap: 7px;
-      font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500;
-      color: var(--accent); background: var(--pill-bg);
-      border: 1px solid var(--gold-dim); border-radius: 20px;
-      padding: 4px 11px; margin-bottom: 16px;
-      letter-spacing: 0.06em; text-transform: uppercase;
-    }
-    .hero-title {
-      font-family: var(--font-serif);
-      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
-      font-weight: 600; letter-spacing: -0.01em; line-height: 1.05;
-      margin-bottom: 12px;
-    }
-    .hero-title .gold { color: var(--accent); font-style: italic; }
-    .hero-sub { font-size: 0.9rem; color: var(--text-muted); max-width: 460px; line-height: 1.65; }
-
-     
-    .filter-bar {
-      padding: 0 24px 22px; max-width: 1340px; margin: 0 auto;
-      display: flex; align-items: center; gap: 7px;
-      overflow-x: auto; scrollbar-width: none;
-    }
-    .filter-bar::-webkit-scrollbar { display: none; }
-    .filter-pill {
-      display: flex; align-items: center; gap: 6px;
-      padding: 7px 15px; border-radius: 24px;
-      border: 1px solid var(--border); background: var(--pill-bg);
-      font-size: 0.77rem; font-weight: 600; color: var(--text-muted);
-      cursor: pointer; white-space: nowrap; font-family: var(--font-head);
-      transition: all var(--transition);
-    }
-    .filter-pill:hover { background: var(--pill-hover); border-color: var(--border-hover); color: var(--text); }
-    .filter-pill.active { background: var(--accent); border-color: var(--accent); color: #08090c; }
-    .filter-count { font-family: var(--font-mono); font-size: 0.67rem; opacity: 0.55; background: rgba(255,255,255,0.1); border-radius: 10px; padding: 1px 6px; }
-    .filter-pill.active .filter-count { background: rgba(0,0,0,0.15); }
-
-     
-    .main { max-width: 1340px; margin: 0 auto; padding: 0 24px 72px; }
-
-    .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 10px; margin-bottom: 32px; }
-    .stat-card {
-      background: var(--stat-bg); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 16px 18px;
-      transition: border-color var(--transition);
-    }
-    .stat-card:hover { border-color: var(--border-hover); }
-    .stat-label { font-family: var(--font-mono); font-size: 0.63rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 5px; }
-    .stat-value { font-family: var(--font-serif); font-size: 1.65rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text); }
-    .stat-sub { font-family: var(--font-mono); font-size: 0.66rem; color: var(--chip-green); margin-top: 2px; }
-
-    .section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-    .section-title { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); letter-spacing: 0.09em; text-transform: uppercase; }
-    .section-link { font-size: 0.73rem; font-family: var(--font-mono); color: var(--accent); cursor: pointer; opacity: 0.7; }
-    .section-link:hover { opacity: 1; }
-
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; margin-bottom: 36px; }
-    .card-grid.featured { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
-
-     
-    .casino-card {
-      position: relative;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      cursor: pointer;
-      display: flex; flex-direction: column;
-      transition: border-color var(--transition), box-shadow var(--transition), transform 0.2s cubic-bezier(.34,1.4,.64,1);
-      animation: fadeInUp 0.45s ease both;
-    }
-    .casino-card:hover {
-      border-color: var(--border-hover);
-      box-shadow: 0 0 0 1px var(--gold-dim), var(--shadow-hover);
-      transform: translateY(-3px);
-    }
-     
-    .casino-card::before {
-      content: '';
-      position: absolute; top: 0; left: -100%; right: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
-      transition: left 0.55s ease, right 0.55s ease;
-      z-index: 3;
-    }
-    .casino-card:hover::before { left: 0; right: 0; }
-
-     
-    .card-inner {
-      padding: 20px 20px 18px;
-      display: flex; flex-direction: column; gap: 14px;
-      flex: 1;
-    }
-
-     
-    .card-top {
-      display: flex; align-items: center; gap: 13px;
-    }
-    .card-favicon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem;
-      flex-shrink: 0;
-      overflow: hidden;
-      position: relative;
-      transition: border-color var(--transition);
-    }
-    .casino-card:hover .card-favicon { border-color: var(--border-hover); }
-     
-    .card-favicon::after {
-      content: '';
-      position: absolute; inset: 0;
-      border-radius: 11px;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
-      pointer-events: none;
-    }
-    .card-name-block { flex: 1; min-width: 0; }
-    .card-name {
-      font-family: var(--font-serif);
-      font-size: 1.12rem; font-weight: 700;
-      letter-spacing: -0.01em; line-height: 1.2;
-      color: var(--text);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .card-url {
-      display: inline-flex; align-items: center; gap: 4px;
-      font-family: var(--font-mono); font-size: 0.68rem;
-      color: var(--accent); margin-top: 3px;
-      text-decoration: none; opacity: 0.75;
-      transition: opacity var(--transition);
-    }
-    .card-url:hover { opacity: 1; }
-    .card-url-arrow { font-size: 0.6em; }
-     
-    .card-badge {
-      flex-shrink: 0;
-      font-family: var(--font-mono); font-size: 0.58rem; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 3px 9px; border-radius: 20px; border: 1px solid;
-      align-self: flex-start;
-    }
-    .badge-new      { color: #5ce8a4; border-color: rgba(92,232,164,0.35);  background: rgba(92,232,164,0.08); }
-    .badge-new::before { content: '● '; font-size: 0.5em; }
-    .badge-hot      { color: #f0945a; border-color: rgba(240,148,90,0.35);  background: rgba(240,148,90,0.08); }
-    .badge-top      { color: var(--gold); border-color: var(--gold-dim);    background: rgba(201,168,76,0.08); }
-    .badge-verified { color: #7eb8f7; border-color: rgba(126,184,247,0.35); background: rgba(126,184,247,0.08); }
-
-     
-    .card-divider {
-      height: 1px; background: var(--border); margin: 0 -20px;
-    }
-
-     
-    .card-desc {
-      font-size: 0.82rem; color: var(--text-muted);
-      line-height: 1.65; font-family: var(--font-head);
-       
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-     
-    .card-footer {
-      display: flex; align-items: center; gap: 6px;
-      flex-wrap: wrap;
-      padding: 14px 20px;
-      border-top: 1px solid var(--border);
-    }
-    .card-tag {
-      font-family: var(--font-mono); font-size: 0.62rem; font-weight: 500;
-      color: var(--text-muted); background: var(--pill-bg);
-      border: 1px solid var(--border); border-radius: 20px;
-      padding: 2px 9px;
-      transition: border-color var(--transition), color var(--transition);
-    }
-    .casino-card:hover .card-tag { border-color: var(--border-hover); }
-    .card-footer-arrow {
-      margin-left: auto;
-      font-size: 0.85rem; color: var(--accent); opacity: 0;
-      transition: opacity var(--transition), transform var(--transition);
-    }
-    .casino-card:hover .card-footer-arrow { opacity: 1; transform: translateX(3px); }
-
-     
-    @keyframes fadeInUp { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform:translateY(0); } }
-    .casino-card:nth-child(1){animation-delay:.04s}
-    .casino-card:nth-child(2){animation-delay:.09s}
-    .casino-card:nth-child(3){animation-delay:.15s}
-    .casino-card:nth-child(4){animation-delay:.21s}
-    .casino-card:nth-child(5){animation-delay:.27s}
-    .casino-card:nth-child(6){animation-delay:.33s}
-    .casino-card:nth-child(7){animation-delay:.39s}
-    .casino-card:nth-child(8){animation-delay:.45s}
-
-     
-    @media (max-width: 640px) {
-      header { padding: 0 14px; gap: 10px; }
-      .nav-tabs { display: none; }
-      .hero { padding: 28px 14px 18px; }
-      .filter-bar, .main { padding-left: 14px; padding-right: 14px; }
-    }
-  </style>
+  
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
 
 
 <header>
   <a class="logo" href="#"><span class="logo-gem"></span>luxpin</a>
+
   <div class="nav-tabs">
     <button class="nav-tab active" onclick="setTab(this)">Markets</button>
     <button class="nav-tab" onclick="setTab(this)">Activity</button>
     <button class="nav-tab" onclick="setTab(this)">Leaderboard</button>
     <button class="nav-tab" onclick="setTab(this)">Explore</button>
   </div>
+
   <div class="header-spacer"></div>
 
+  
   <div class="country-switcher" id="cs">
     <button class="country-btn" onclick="toggleCS()">
       <span id="cflag">🇨🇦</span>
@@ -426,130 +53,70 @@
     </div>
   </div>
 
+  
   <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">☀️</button>
 </header>
 
 
-<div class="ticker-wrap"><div class="ticker" id="ticker"></div></div>
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker"></div>
+</div>
 
 
 <div class="hero">
-  <div class="hero-eyebrow">♠ Live prediction markets</div>
+  <div class="hero-eyebrow">Crypto Casino Directory</div>
   <h1 class="hero-title">Where <span class="gold">fortune</span><br/>favours the informed.</h1>
-  <p class="hero-sub">Real-money prediction markets on politics, finance, culture &amp; more — curated for <span id="heroC">Canada</span>.</p>
+  <p class="hero-sub">Top-rated online casinos curated for <span id="heroC">Canada</span>. Reviewed, ranked, and trusted.</p>
 </div>
 
 
 <div class="filter-bar">
   <div class="filter-pill active" onclick="setF(this)">♠ All <span class="filter-count">48</span></div>
-  <div class="filter-pill" onclick="setF(this)">🏛️ Politics <span class="filter-count">12</span></div>
-  <div class="filter-pill" onclick="setF(this)">💹 Finance <span class="filter-count">9</span></div>
-  <div class="filter-pill" onclick="setF(this)">🤖 Tech &amp; AI <span class="filter-count">8</span></div>
-  <div class="filter-pill" onclick="setF(this)">⚽ Sports <span class="filter-count">7</span></div>
-  <div class="filter-pill" onclick="setF(this)">🌏 Geo <span class="filter-count">6</span></div>
-  <div class="filter-pill" onclick="setF(this)">🎬 Culture <span class="filter-count">6</span></div>
+  <div class="filter-pill" onclick="setF(this)">🎰 Slots <span class="filter-count">18</span></div>
+  <div class="filter-pill" onclick="setF(this)">🃏 Live Casino <span class="filter-count">12</span></div>
+  <div class="filter-pill" onclick="setF(this)">⚽ Sports <span class="filter-count">9</span></div>
+  <div class="filter-pill" onclick="setF(this)">♠ Poker <span class="filter-count">7</span></div>
+  <div class="filter-pill" onclick="setF(this)">🎲 Table Games <span class="filter-count">6</span></div>
+  <div class="filter-pill" onclick="setF(this)">📱 Mobile <span class="filter-count">5</span></div>
 </div>
 
 
 <main class="main">
+
+  
   <div class="stat-strip">
-    <div class="stat-card"><div class="stat-label">Total Volume</div><div class="stat-value">$2.4B</div><div class="stat-sub">↑ 12.4% this week</div></div>
-    <div class="stat-card"><div class="stat-label">Open Markets</div><div class="stat-value">1,284</div><div class="stat-sub">↑ 38 new today</div></div>
-    <div class="stat-card"><div class="stat-label">Active Traders</div><div class="stat-value">84K</div><div class="stat-sub">↑ 5.1% this month</div></div>
-    <div class="stat-card"><div class="stat-label">Avg. Accuracy</div><div class="stat-value">91%</div><div class="stat-sub">Resolution score</div></div>
+    <div class="stat-card">
+      <div class="stat-label">Casinos Listed</div>
+      <div class="stat-value">284</div>
+      <div class="stat-sub">↑ 12 added this month</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Verified &amp; Licensed</div>
+      <div class="stat-value">97%</div>
+      <div class="stat-sub">All jurisdictions checked</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Player Reviews</div>
+      <div class="stat-value">84K</div>
+      <div class="stat-sub">↑ 2.1K this week</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Avg. Rating</div>
+      <div class="stat-value">4.6★</div>
+      <div class="stat-sub">Across all listings</div>
+    </div>
   </div>
 
+  
   <div class="section-head">
     <div class="section-title">♣ All Casinos</div>
     <a class="section-link">View all →</a>
   </div>
   <div class="card-grid" id="allGrid"></div>
+
 </main>
 
-<script>
-const casinos = [
-  { id:1,  icon:'🎰', name:'Jackpot City',    url:'jackpotcity.com',    badge:'top',      desc:'One of the longest-running online casinos, Jackpot City offers over 500 games powered by Microgaming, including progressive jackpots that have paid out millions. Fully licensed and trusted since 1998.',                          tags:['Slots','Live Casino','Jackpots'] },
-  { id:2,  icon:'♠️', name:'888 Casino',       url:'888casino.com',      badge:'verified', desc:'Award-winning casino with a vast library of exclusive in-house games alongside titles from top providers. Known for generous welcome bonuses and industry-leading responsible gambling tools.',                                   tags:['Poker','Slots','Live Dealer'] },
-  { id:3,  icon:'🃏', name:'LeoVegas',         url:'leovegas.com',        badge:'new',      desc:'Mobile-first casino crowned Mobile Casino of the Year multiple times. LeoVegas delivers a seamless experience across all devices with a curated selection of slots, sports, and live table games.',                          tags:['Mobile','Sports','Live Casino'] },
-  { id:4,  icon:'🎲', name:'Spin Casino',      url:'spincasino.com',      badge:'hot',      desc:'Spin Casino combines a clean, intuitive interface with over 700 Microgaming titles. Renowned for its loyalty programme and consistent payout speeds, it is a staple choice for Canadian players.',                              tags:['Slots','Blackjack','Loyalty'] },
-  { id:5,  icon:'🌟', name:'Royal Vegas',      url:'royalvegas.com',      badge:'top',      desc:'Royal Vegas carries a regal reputation built over two decades. Expect hundreds of premium slots, classic table games, and a VIP programme that rewards high rollers with personalised perks.',                                 tags:['VIP','Table Games','Slots'] },
-  { id:6,  icon:'💎', name:'Casumo',           url:'casumo.com',          badge:'verified', desc:'Casumo reinvented the casino experience with its adventure-based reward system. Players earn trophies and level up as they play, making every session feel like progress toward something bigger.',                              tags:['Adventure','Slots','Live'] },
-  { id:7,  icon:'🏆', name:'Betway Casino',    url:'betway.com',          badge:'hot',      desc:'Global sports betting giant with a world-class casino wing. Betway live casino floor is broadcast from professional studios in multiple languages, featuring exclusive table variants.',                                     tags:['Sports','Live Dealer','Baccarat'] },
-  { id:8,  icon:'🎴', name:'Rizk Casino',      url:'rizk.com',            badge:'new',      desc:'Rizk is built around its superhero mascot and the Wheel of Rizk — a daily bonus wheel every player can spin. No wagering requirements on free spins make it a fan favourite among slots enthusiasts.',                         tags:['No Wager','Slots','Free Spins'] },
-  { id:9,  icon:'🌈', name:'PlayOJO',          url:'playojo.com',         badge:'verified', desc:'PlayOJO made waves by scrapping all wagering requirements entirely. Every bonus, every free spin pays out in real cash immediately. Transparent, fair, and refreshingly straightforward.',                                    tags:['Fair Play','Slots','Cashback'] },
-  { id:10, icon:'🌊', name:'Unibet Casino',    url:'unibet.com',          badge:'top',      desc:'Part of the Kindred Group, Unibet merges a comprehensive sportsbook with a fully stocked casino. Their poker network is among the softest in the world, attracting recreational players globally.',                          tags:['Poker','Sports','Live'] },
-  { id:11, icon:'🎯', name:'Mr Green',         url:'mrgreen.com',         badge:'hot',      desc:'Mr Green pioneered the Green Gaming responsible gambling tool that analyses playing patterns and flags risk. Behind the safety-first ethos sits a curated game library with the best titles hand-picked by experts.',        tags:['Responsible','Slots','Table'] },
-  { id:12, icon:'⚡', name:'Wildz Casino',     url:'wildz.com',           badge:'new',      desc:'Wildz is a newcomer that grew fast by offering lightning-quick withdrawals, a sleek app, and an ever-growing catalogue of slots from 40+ providers. Daily promotions keep the experience fresh every visit.',                 tags:['Fast Payout','Mobile','Slots'] },
-];
 
-const badgeMap = {
-  top:      ['badge-top',      '★ Top Pick'],
-  hot:      ['badge-hot',      'Hot'],
-  new:      ['badge-new',      'New'],
-  verified: ['badge-verified', '✓ Verified'],
-};
-
-function makeCard(c) {
-  const [badgeCls, badgeTxt] = badgeMap[c.badge] || ['',''];
-  const tagsHtml = c.tags.map(t => `<span class="card-tag">${t}</span>`).join('');
-  return `
-  <div class="casino-card" onclick="window.open('https://'+this.dataset.url,'_blank')" data-url="${c.url}">
-    <div class="card-inner">
-      <div class="card-top">
-        <div class="card-favicon">${c.icon}</div>
-        <div class="card-name-block">
-          <div class="card-name">${c.name}</div>
-          <a class="card-url" href="https://${c.url}" target="_blank" onclick="event.stopPropagation()">
-            ${c.url} <span class="card-url-arrow">↗</span>
-          </a>
-        </div>
-        ${badgeTxt ? `<div class="card-badge ${badgeCls}">${badgeTxt}</div>` : ''}
-      </div>
-      <div class="card-divider"></div>
-      <div class="card-desc">${c.desc}</div>
-    </div>
-    <div class="card-footer">
-      ${tagsHtml}
-      <span class="card-footer-arrow">→</span>
-    </div>
-  </div>`;
-}
-
-document.getElementById('allGrid').innerHTML = casinos.map(makeCard).join('');
-
-
-const td=[
-  {n:'PAP Win 80+',p:'+2.1%',u:true},{n:'BTC $150k',p:'-0.8%',u:false},
-  {n:'GPT-6 2026',p:'+4.2%',u:true},{n:'Fed Cut 3x',p:'+1.5%',u:true},
-  {n:'Brazil WC',p:'-1.2%',u:false},{n:'USD/SGD 1.40',p:'-0.3%',u:false},
-  {n:'Apple 1B AI',p:'+2.9%',u:true},{n:'Mars 2028',p:'-0.6%',u:false},
-];
-document.getElementById('ticker').innerHTML=[...td,...td].map(t=>
-  `<span class="ticker-item"><span class="ticker-dot"></span><span class="ticker-name">${t.n}</span><span class="${t.u?'ticker-up':'ticker-dn'}">${t.p}</span></span>`
-).join('');
-
-
-function toggleTheme(){
-  const h=document.documentElement, dark=h.getAttribute('data-theme')==='dark';
-  h.setAttribute('data-theme',dark?'light':'dark');
-  document.getElementById('themeBtn').textContent=dark?'🌙':'☀️';
-}
-
-
-function toggleCS(){ document.getElementById('cs').classList.toggle('open'); }
-function pickC(el,f,n){
-  document.getElementById('cflag').textContent=f;
-  document.getElementById('cname').textContent=n;
-  document.getElementById('heroC').textContent=n;
-  document.querySelectorAll('.country-item').forEach(i=>i.classList.remove('active'));
-  el.classList.add('active');
-  document.getElementById('cs').classList.remove('open');
-}
-document.addEventListener('click',e=>{ if(!document.getElementById('cs').contains(e.target)) document.getElementById('cs').classList.remove('open'); });
-
-
-function setTab(el){ document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active')); el.classList.add('active'); }
-function setF(el){ document.querySelectorAll('.filter-pill').forEach(p=>p.classList.remove('active')); el.classList.add('active'); }
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
