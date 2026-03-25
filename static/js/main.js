@@ -4,114 +4,123 @@
 
 /* ──────────────────────────────────────
    CASINO DATA
-   Edit name, url, icon, badge, desc, tags here.
-   badge options: 'top' | 'hot' | 'new' | 'verified' | ''
+   ──────────────────────────────────────
+   Fields:
+     id     — unique number
+     img    — path to logo image (put files in /static/img/casinos/)
+               e.g. '/img/casinos/jackpotcity.png'
+               Use a square image, min 96×96px. PNG or WebP recommended.
+     name   — casino display name
+     url    — domain only, no https://
+     badge  — 'top' | 'hot' | 'new' | 'verified' | '' (empty = no badge)
+     desc   — 2–3 sentence description. Avoid apostrophes (use "it is" not "it's")
+     tags   — array of short category labels shown as pills
    ────────────────────────────────────── */
 const casinos = [
   {
     id: 1,
-    icon: '🎰',
-    name: 'Jackpot City',
-    url: 'jackpotcity.com',
+    img:  '/img/casinos/bcgame.png',
+    name: 'BC.GAME',
+    url:  'bc.game',
     badge: 'top',
-    desc: 'One of the longest-running online casinos, Jackpot City offers over 500 games powered by Microgaming, including progressive jackpots that have paid out millions. Fully licensed and trusted since 1998.',
-    tags: ['Slots', 'Live Casino', 'Jackpots'],
+    desc: 'BC.Game is a crypto-first online casino offering provably fair games, instant cryptocurrency deposits and withdrawals, and a wide selection of slots, live dealer games, and in-house originals. Known for its fast gameplay and low entry barriers, it’s popular among crypto users but restricts access in certain regions.',
+    tags: ['Slots', 'Crypto Casino', 'Jackpots'],
   },
   {
     id: 2,
-    icon: '♠️',
+    img:  '/img/casinos/888casino.png',
     name: '888 Casino',
-    url: '888casino.com',
+    url:  '888casino.com',
     badge: 'verified',
     desc: 'Award-winning casino with a vast library of exclusive in-house games alongside titles from top providers. Known for generous welcome bonuses and industry-leading responsible gambling tools.',
     tags: ['Poker', 'Slots', 'Live Dealer'],
   },
   {
     id: 3,
-    icon: '🃏',
+    img:  '/img/casinos/leovegas.png',
     name: 'LeoVegas',
-    url: 'leovegas.com',
+    url:  'leovegas.com',
     badge: 'new',
     desc: 'Mobile-first casino crowned Mobile Casino of the Year multiple times. LeoVegas delivers a seamless experience across all devices with a curated selection of slots, sports, and live table games.',
     tags: ['Mobile', 'Sports', 'Live Casino'],
   },
   {
     id: 4,
-    icon: '🎲',
+    img:  '/img/casinos/spincasino.png',
     name: 'Spin Casino',
-    url: 'spincasino.com',
+    url:  'spincasino.com',
     badge: 'hot',
     desc: 'Spin Casino combines a clean, intuitive interface with over 700 Microgaming titles. Renowned for its loyalty programme and consistent payout speeds, it is a staple choice for Canadian players.',
     tags: ['Slots', 'Blackjack', 'Loyalty'],
   },
   {
     id: 5,
-    icon: '🌟',
+    img:  '/img/casinos/royalvegas.png',
     name: 'Royal Vegas',
-    url: 'royalvegas.com',
+    url:  'royalvegas.com',
     badge: 'top',
     desc: 'Royal Vegas carries a regal reputation built over two decades. Expect hundreds of premium slots, classic table games, and a VIP programme that rewards high rollers with personalised perks.',
     tags: ['VIP', 'Table Games', 'Slots'],
   },
   {
     id: 6,
-    icon: '💎',
+    img:  '/img/casinos/casumo.png',
     name: 'Casumo',
-    url: 'casumo.com',
+    url:  'casumo.com',
     badge: 'verified',
     desc: 'Casumo reinvented the casino experience with its adventure-based reward system. Players earn trophies and level up as they play, making every session feel like progress toward something bigger.',
     tags: ['Adventure', 'Slots', 'Live'],
   },
   {
     id: 7,
-    icon: '🏆',
+    img:  '/img/casinos/betway.png',
     name: 'Betway Casino',
-    url: 'betway.com',
+    url:  'betway.com',
     badge: 'hot',
     desc: 'Global sports betting giant with a world-class casino wing. Betway live casino floor is broadcast from professional studios in multiple languages, featuring exclusive table variants.',
     tags: ['Sports', 'Live Dealer', 'Baccarat'],
   },
   {
     id: 8,
-    icon: '🎴',
+    img:  '/img/casinos/rizk.png',
     name: 'Rizk Casino',
-    url: 'rizk.com',
+    url:  'rizk.com',
     badge: 'new',
     desc: 'Rizk is built around its superhero mascot and the Wheel of Rizk — a daily bonus wheel every player can spin. No wagering requirements on free spins make it a fan favourite among slots enthusiasts.',
     tags: ['No Wager', 'Slots', 'Free Spins'],
   },
   {
     id: 9,
-    icon: '🌈',
+    img:  '/img/casinos/playojo.png',
     name: 'PlayOJO',
-    url: 'playojo.com',
+    url:  'playojo.com',
     badge: 'verified',
     desc: 'PlayOJO made waves by scrapping all wagering requirements entirely. Every bonus, every free spin pays out in real cash immediately. Transparent, fair, and refreshingly straightforward.',
     tags: ['Fair Play', 'Slots', 'Cashback'],
   },
   {
     id: 10,
-    icon: '🌊',
+    img:  '/img/casinos/unibet.png',
     name: 'Unibet Casino',
-    url: 'unibet.com',
+    url:  'unibet.com',
     badge: 'top',
     desc: 'Part of the Kindred Group, Unibet merges a comprehensive sportsbook with a fully stocked casino. Their poker network is among the softest in the world, attracting recreational players globally.',
     tags: ['Poker', 'Sports', 'Live'],
   },
   {
     id: 11,
-    icon: '🎯',
+    img:  '/img/casinos/mrgreen.png',
     name: 'Mr Green',
-    url: 'mrgreen.com',
+    url:  'mrgreen.com',
     badge: 'hot',
     desc: 'Mr Green pioneered the Green Gaming responsible gambling tool that analyses playing patterns and flags risk. Behind the safety-first ethos sits a curated game library with the best titles hand-picked by experts.',
     tags: ['Responsible', 'Slots', 'Table'],
   },
   {
     id: 12,
-    icon: '⚡',
+    img:  '/img/casinos/wildz.png',
     name: 'Wildz Casino',
-    url: 'wildz.com',
+    url:  'wildz.com',
     badge: 'new',
     desc: 'Wildz is a newcomer that grew fast by offering lightning-quick withdrawals, a sleek app, and an ever-growing catalogue of slots from 40+ providers. Daily promotions keep the experience fresh every visit.',
     tags: ['Fast Payout', 'Mobile', 'Slots'],
@@ -137,11 +146,22 @@ function makeCard(c) {
   const [badgeCls, badgeTxt] = badgeMap[c.badge] || ['', ''];
   const tagsHtml = c.tags.map(t => `<span class="card-tag">${t}</span>`).join('');
 
+  // Initials fallback shown if image fails to load
+  const initials = c.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+
   return `
     <div class="casino-card" onclick="window.open('https://${c.url}','_blank')">
       <div class="card-inner">
         <div class="card-top">
-          <div class="card-favicon">${c.icon}</div>
+          <div class="card-favicon">
+            <img
+              src="${c.img}"
+              alt="${c.name} logo"
+              class="favicon-img"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <span class="favicon-fallback" style="display:none">${initials}</span>
+          </div>
           <div class="card-name-block">
             <div class="card-name">${c.name}</div>
             <a class="card-url" href="https://${c.url}" target="_blank" onclick="event.stopPropagation()">
@@ -175,7 +195,7 @@ const TICKER_COINS = [
   'ripple',
   'dogecoin',
   'cardano',
-  'litecoin',
+  'tron',
 ];
 
 // Display currency — matches country switcher
@@ -190,7 +210,7 @@ const TICKER_SYMBOLS = {
   ripple:      'XRP',
   dogecoin:    'DOGE',
   cardano:     'ADA',
-  litecoin:    'LTC',
+  tron:        'TRX',
 };
 
 const CURRENCY_SIGN = {
