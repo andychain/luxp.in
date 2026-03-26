@@ -195,7 +195,7 @@ const TICKER_COINS = [
   'ripple',
   'dogecoin',
   'cardano',
-  'tron',
+  'litecoin',
 ];
 
 // Display currency — matches country switcher
@@ -210,7 +210,7 @@ const TICKER_SYMBOLS = {
   ripple:      'XRP',
   dogecoin:    'DOGE',
   cardano:     'ADA',
-  tron:        'TRX',
+  litecoin:    'LTC',
 };
 
 const CURRENCY_SIGN = {
