@@ -11,7 +11,10 @@
                e.g. '/img/casinos/jackpotcity.png'
                Use a square image, min 96×96px. PNG or WebP recommended.
      name   — casino display name
-     url    — domain only, no https://
+     url    — display label shown on the card (e.g. 'bc.game')
+     link   — actual URL users go to when clicking (your affiliate link)
+               e.g. 'https://bc.game/i-myaffiliate'
+               If omitted, falls back to https://url
      badge  — 'top' | 'hot' | 'new' | 'verified' | '' (empty = no badge)
      desc   — 2–3 sentence description. Avoid apostrophes (use "it is" not "it's")
      tags   — array of short category labels shown as pills
@@ -22,8 +25,9 @@ const casinos = [
     img:  '/img/casinos/bcgame.png',
     name: 'BC.GAME',
     url:  'bc.game',
+    link: 'https://bc.game/i-1zsibyr3p-n/',
     badge: 'top',
-    desc: 'BC.Game is a crypto-first online casino offering provably fair games, instant cryptocurrency deposits and withdrawals, and a wide selection of slots, live dealer games, and in-house originals. Known for its fast gameplay and low entry barriers, it’s popular among crypto users but restricts access in certain regions.',
+    desc: 'BC.Game is a crypto-first online casino offering provably fair games, instant cryptocurrency deposits and withdrawals, and a wide selection of slots, live dealer games, and in-house originals. Known for its fast gameplay and low entry barriers, it is popular among crypto users but restricts access in certain regions.',
     tags: ['Slots', 'Crypto Casino', 'Jackpots'],
   },
   {
@@ -31,6 +35,7 @@ const casinos = [
     img:  '/img/casinos/888casino.png',
     name: '888 Casino',
     url:  '888casino.com',
+    link: 'https://888casino.com',
     badge: 'verified',
     desc: 'Award-winning casino with a vast library of exclusive in-house games alongside titles from top providers. Known for generous welcome bonuses and industry-leading responsible gambling tools.',
     tags: ['Poker', 'Slots', 'Live Dealer'],
@@ -40,6 +45,7 @@ const casinos = [
     img:  '/img/casinos/leovegas.png',
     name: 'LeoVegas',
     url:  'leovegas.com',
+    link: 'https://leovegas.com',
     badge: 'new',
     desc: 'Mobile-first casino crowned Mobile Casino of the Year multiple times. LeoVegas delivers a seamless experience across all devices with a curated selection of slots, sports, and live table games.',
     tags: ['Mobile', 'Sports', 'Live Casino'],
@@ -49,6 +55,7 @@ const casinos = [
     img:  '/img/casinos/spincasino.png',
     name: 'Spin Casino',
     url:  'spincasino.com',
+    link: 'https://spincasino.com',
     badge: 'hot',
     desc: 'Spin Casino combines a clean, intuitive interface with over 700 Microgaming titles. Renowned for its loyalty programme and consistent payout speeds, it is a staple choice for Canadian players.',
     tags: ['Slots', 'Blackjack', 'Loyalty'],
@@ -58,6 +65,7 @@ const casinos = [
     img:  '/img/casinos/royalvegas.png',
     name: 'Royal Vegas',
     url:  'royalvegas.com',
+    link: 'https://royalvegas.com',
     badge: 'top',
     desc: 'Royal Vegas carries a regal reputation built over two decades. Expect hundreds of premium slots, classic table games, and a VIP programme that rewards high rollers with personalised perks.',
     tags: ['VIP', 'Table Games', 'Slots'],
@@ -67,6 +75,7 @@ const casinos = [
     img:  '/img/casinos/casumo.png',
     name: 'Casumo',
     url:  'casumo.com',
+    link: 'https://casumo.com',
     badge: 'verified',
     desc: 'Casumo reinvented the casino experience with its adventure-based reward system. Players earn trophies and level up as they play, making every session feel like progress toward something bigger.',
     tags: ['Adventure', 'Slots', 'Live'],
@@ -76,6 +85,7 @@ const casinos = [
     img:  '/img/casinos/betway.png',
     name: 'Betway Casino',
     url:  'betway.com',
+    link: 'https://betway.com',
     badge: 'hot',
     desc: 'Global sports betting giant with a world-class casino wing. Betway live casino floor is broadcast from professional studios in multiple languages, featuring exclusive table variants.',
     tags: ['Sports', 'Live Dealer', 'Baccarat'],
@@ -85,6 +95,7 @@ const casinos = [
     img:  '/img/casinos/rizk.png',
     name: 'Rizk Casino',
     url:  'rizk.com',
+    link: 'https://rizk.com',
     badge: 'new',
     desc: 'Rizk is built around its superhero mascot and the Wheel of Rizk — a daily bonus wheel every player can spin. No wagering requirements on free spins make it a fan favourite among slots enthusiasts.',
     tags: ['No Wager', 'Slots', 'Free Spins'],
@@ -94,6 +105,7 @@ const casinos = [
     img:  '/img/casinos/playojo.png',
     name: 'PlayOJO',
     url:  'playojo.com',
+    link: 'https://playojo.com',
     badge: 'verified',
     desc: 'PlayOJO made waves by scrapping all wagering requirements entirely. Every bonus, every free spin pays out in real cash immediately. Transparent, fair, and refreshingly straightforward.',
     tags: ['Fair Play', 'Slots', 'Cashback'],
@@ -103,6 +115,7 @@ const casinos = [
     img:  '/img/casinos/unibet.png',
     name: 'Unibet Casino',
     url:  'unibet.com',
+    link: 'https://unibet.com',
     badge: 'top',
     desc: 'Part of the Kindred Group, Unibet merges a comprehensive sportsbook with a fully stocked casino. Their poker network is among the softest in the world, attracting recreational players globally.',
     tags: ['Poker', 'Sports', 'Live'],
@@ -112,6 +125,7 @@ const casinos = [
     img:  '/img/casinos/mrgreen.png',
     name: 'Mr Green',
     url:  'mrgreen.com',
+    link: 'https://mrgreen.com',
     badge: 'hot',
     desc: 'Mr Green pioneered the Green Gaming responsible gambling tool that analyses playing patterns and flags risk. Behind the safety-first ethos sits a curated game library with the best titles hand-picked by experts.',
     tags: ['Responsible', 'Slots', 'Table'],
@@ -121,6 +135,7 @@ const casinos = [
     img:  '/img/casinos/wildz.png',
     name: 'Wildz Casino',
     url:  'wildz.com',
+    link: 'https://wildz.com',
     badge: 'new',
     desc: 'Wildz is a newcomer that grew fast by offering lightning-quick withdrawals, a sleek app, and an ever-growing catalogue of slots from 40+ providers. Daily promotions keep the experience fresh every visit.',
     tags: ['Fast Payout', 'Mobile', 'Slots'],
@@ -146,11 +161,14 @@ function makeCard(c) {
   const [badgeCls, badgeTxt] = badgeMap[c.badge] || ['', ''];
   const tagsHtml = c.tags.map(t => `<span class="card-tag">${t}</span>`).join('');
 
+  // Actual destination: use c.link if set, otherwise fall back to https://url
+  const dest = c.link || 'https://' + c.url;
+
   // Initials fallback shown if image fails to load
   const initials = c.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 
   return `
-    <div class="casino-card" onclick="window.open('https://${c.url}','_blank')">
+    <div class="casino-card" onclick="window.open('${dest}','_blank')">
       <div class="card-inner">
         <div class="card-top">
           <div class="card-favicon">
@@ -164,7 +182,7 @@ function makeCard(c) {
           </div>
           <div class="card-name-block">
             <div class="card-name">${c.name}</div>
-            <a class="card-url" href="https://${c.url}" target="_blank" onclick="event.stopPropagation()">
+            <a class="card-url" href="${dest}" target="_blank" onclick="event.stopPropagation()">
               ${c.url} <span class="card-url-arrow">↗</span>
             </a>
           </div>
