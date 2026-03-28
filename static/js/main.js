@@ -52,12 +52,12 @@ const casinos = [
   },
   {
     id: 4,
-    img:  '/img/casinos/spincasino.png',
-    name: 'Spin Casino',
-    url:  'spincasino.com',
-    link: 'https://spincasino.com',
+    img:  '/img/casinos/stake.png',
+    name: 'Stake',
+    url:  'stake.com',
+    link: 'stake.com/?c=t9Hcn0NQ',
     badge: 'hot',
-    desc: 'Spin Casino combines a clean, intuitive interface with over 700 Microgaming titles. Renowned for its loyalty programme and consistent payout speeds, it is a staple choice for Canadian players.',
+    desc: 'Stake.com is a global crypto casino and sportsbook where users gamble online using cryptocurrencies.',
     tags: ['Slots', 'Blackjack', 'Loyalty'],
   },
   {
