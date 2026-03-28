@@ -55,7 +55,7 @@ const casinos = [
     img:  '/img/casinos/stake.png',
     name: 'Stake',
     url:  'stake.com',
-    link: 'stake.com/?c=t9Hcn0NQ',
+    link: 'https://stake.com/?c=t9Hcn0NQ',
     badge: 'hot',
     desc: 'Stake.com is a global crypto casino and sportsbook where users gamble online using cryptocurrencies.',
     tags: ['Slots', 'Blackjack', 'Loyalty'],
