@@ -82,12 +82,12 @@ const casinos = [
   },
   {
     id: 7,
-    img:  '/img/casinos/betway.png',
-    name: 'Betway Casino',
-    url:  'betway.com',
-    link: 'https://betway.com',
+    img:  '/img/casinos/roobet.png',
+    name: 'Roobet',
+    url:  'roobet.com',
+    link: 'https://roobet.com/?ref=luxpin',
     badge: 'hot',
-    desc: 'Global sports betting giant with a world-class casino wing. Betway live casino floor is broadcast from professional studios in multiple languages, featuring exclusive table variants.',
+    desc: 'Roobet is an online crypto casino platform where users can play games like slots, roulette, and live dealer games using cryptocurrencies. It also offers a proprietary game called Crash, where players bet on a rising multiplier and cash out before it drops.',
     tags: ['Sports', 'Live Dealer', 'Baccarat'],
   },
   {
