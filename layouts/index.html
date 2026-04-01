@@ -70,7 +70,7 @@
 
 <!-- ══ FILTER BAR ══ -->
 <div class="filter-bar">
-  <div class="filter-pill active" onclick="setF(this)">♠ All <span class="filter-count">48</span></div>
+  <div class="filter-pill active" onclick="setF(this)">♠ All <span class="filter-count">{{ len (where site.RegularPages "Section" "casinos") }}</span></div>
   <div class="filter-pill" onclick="setF(this)">🎰 Slots <span class="filter-count">18</span></div>
   <div class="filter-pill" onclick="setF(this)">🃏 Live Casino <span class="filter-count">12</span></div>
   <div class="filter-pill" onclick="setF(this)">⚽ Sports <span class="filter-count">9</span></div>
@@ -111,7 +111,60 @@
     <div class="section-title">♣ All Casinos</div>
     <a class="section-link">View all →</a>
   </div>
-  <div class="card-grid" id="allGrid"></div>
+
+  <div class="card-grid">
+    {{- $badgeLabels  := dict "top" "★ Top Pick" "hot" "Hot" "new" "New" "verified" "✓ Verified" -}}
+    {{- $badgeClasses := dict "top" "badge-top" "hot" "badge-hot" "new" "badge-new" "verified" "badge-verified" -}}
+
+    {{- range sort (where site.RegularPages "Section" "casinos") "Weight" -}}
+      {{- $dest        := cond (ne .Params.link "") .Params.link (printf "https://%s" .Params.url_label) -}}
+      {{- $words       := split .Title " " -}}
+      {{- $init        := "" -}}
+      {{- range $words -}}{{- $init = printf "%s%s" $init (substr . 0 1) -}}{{- end -}}
+      {{- $initials    := upper (substr $init 0 2) -}}
+      {{- $badge       := .Params.badge -}}
+      {{- $badgeLabel  := index $badgeLabels $badge -}}
+      {{- $badgeClass  := index $badgeClasses $badge -}}
+
+      <div class="casino-card" onclick="window.open('{{ $dest }}','_blank')">
+        <div class="card-inner">
+          <div class="card-top">
+
+            <div class="card-favicon">
+              <img
+                src="{{ .Params.img }}"
+                alt="{{ .Title }} logo"
+                class="favicon-img"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+              />
+              <span class="favicon-fallback" style="display:none">{{ $initials }}</span>
+            </div>
+
+            <div class="card-name-block">
+              <div class="card-name">{{ .Title }}</div>
+              <a class="card-url" href="{{ $dest }}" target="_blank" onclick="event.stopPropagation()">
+                {{ .Params.url_label }} <span class="card-url-arrow">↗</span>
+              </a>
+            </div>
+
+            {{- if $badgeLabel -}}
+            <div class="card-badge {{ $badgeClass }}">{{ $badgeLabel }}</div>
+            {{- end -}}
+
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-desc">{{ .Plain }}</div>
+        </div>
+
+        <div class="card-footer">
+          {{- range .Params.tags -}}
+          <span class="card-tag">{{ . }}</span>
+          {{- end -}}
+          <span class="card-footer-arrow">→</span>
+        </div>
+      </div>
+    {{- end -}}
+  </div>
 
 </main>
 
@@ -169,14 +222,13 @@
 
   <!-- Bottom bar -->
   <div class="footer-bottom">
-    <span class="footer-copy">© <span id="fyear"></span> luxpin. All rights reserved.</span>
+    <span class="footer-copy">© {{ now.Year }} luxpin. All rights reserved.</span>
     <span class="footer-copy-note">Luxpin is an independent affiliate directory. We may earn a commission when you sign up through our links, at no extra cost to you.</span>
   </div>
 
 </footer>
 
 <!-- Scripts -->
-<script src="{{ "js/main.js" }}"></script>
-<script>document.getElementById('fyear').textContent = new Date().getFullYear();</script>
+<script src="{{ "js/main.js" | relURL }}"></script>
 </body>
 </html>
