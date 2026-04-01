@@ -15,9 +15,9 @@
 </head>
 <body>
 
-{{- $country  := .Params.country | default "Canada" -}}
-{{- $flag     := .Params.flag    | default "🇨🇦" -}}
-{{- $limit    := .Params.limit   | default 100 -}}
+{{- $country := .Params.country | default "Canada" -}}
+{{- $flag    := .Params.flag    | default "🇨🇦" -}}
+{{- $code    := .Params.code    | default "ca" -}}
 
 {{- $countries := slice
   (dict "flag" "🇨🇦" "name" "Canada"      "url" "/")
@@ -28,7 +28,7 @@
 
 <!-- ══ HEADER ══ -->
 <header>
-  <a class="logo" href="/"><span class="logo-gem"></span>luxpin</a>
+  <a class="logo" href="{{ if eq $code "ca" }}/{{ else }}/{{ $code }}{{ end }}"><span class="logo-gem"></span>luxpin</a>
 
   <div class="nav-tabs">
     <button class="nav-tab active" onclick="setTab(this)">Markets</button>
@@ -114,8 +114,9 @@
     {{- $badgeLabels  := dict "top" "★ Top Pick" "hot" "Hot" "new" "New" "verified" "✓ Verified" -}}
     {{- $badgeClasses := dict "top" "badge-top" "hot" "badge-hot" "new" "badge-new" "verified" "badge-verified" -}}
 
-    {{- $casinos := sort (where site.RegularPages "Section" "casinos") "Weight" -}}
-    {{- range first $limit $casinos -}}
+    {{- $all     := sort (where site.RegularPages "Section" "casinos") "Weight" -}}
+    {{- $casinos := where $all ".Params.countries" "intersect" (slice $code) -}}
+    {{- range $casinos -}}
       {{- $dest        := cond (ne .Params.link "") .Params.link (printf "https://%s" .Params.url_label) -}}
       {{- $words       := split .Title " " -}}
       {{- $init        := "" -}}
