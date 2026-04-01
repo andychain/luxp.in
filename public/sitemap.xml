@@ -18,6 +18,14 @@
   </url><url>
     <loc>http://localhost:1313/casinos/rollbit/</loc>
   </url><url>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/au/</loc>
+  </url><url>
+    <loc>http://localhost:1313/in/</loc>
+  </url><url>
+    <loc>http://localhost:1313/nz/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/anonymity/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/baccarat/</loc>
@@ -45,8 +53,6 @@
     <loc>http://localhost:1313/tags/lottery/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/loyalty/</loc>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/nft/</loc>
   </url><url>
