@@ -2,10 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/casinos/bc-game/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/betfury/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/betpanda/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/stake/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/gamdom/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/metawin/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/roobet/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/rollbit/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/anonymity/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/baccarat/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/blackjack/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/casino/</loc>
+  </url><url>
+    <loc>http://localhost:1313/casinos/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/crypto-casino/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/crypto-staking/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/free-spins/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/live/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/live-casino/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/live-dealer/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/lottery/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/loyalty/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/nft/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/rewards/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/slots/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sports/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/table-games/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/vip/</loc>
   </url>
 </urlset>

@@ -7,5 +7,61 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BC.GAME</title>
+      <link>http://localhost:1313/casinos/bc-game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/bc-game/</guid>
+      <description>&lt;p&gt;BC.Game is a crypto-first online casino offering provably fair games, instant cryptocurrency deposits and withdrawals, and a wide selection of slots, live dealer games, and in-house originals. Known for its fast gameplay and low entry barriers, it is popular among crypto users but restricts access in certain regions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BetFury</title>
+      <link>http://localhost:1313/casinos/betfury/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/betfury/</guid>
+      <description>&lt;p&gt;BetFury is an online crypto gambling and gaming platform that allows users to play casino-style games, place bets, and earn rewards using cryptocurrencies like Bitcoin. It combines traditional online casino features with blockchain-based elements, including its native BFG token, which users can earn and stake for dividends. The platform is known for its reward system, promotions, and integration of decentralized finance concepts into gaming.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BetPanda</title>
+      <link>http://localhost:1313/casinos/betpanda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/betpanda/</guid>
+      <description>&lt;p&gt;BetPanda is an online crypto-based casino and sportsbook launched around 2023, offering thousands of games (slots, live casino, and sports betting) and supporting deposits and withdrawals in cryptocurrencies. It emphasizes fast transactions, user anonymity (minimal or no KYC), and a wide range of betting options, including esports and live betting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stake</title>
+      <link>http://localhost:1313/casinos/stake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/stake/</guid>
+      <description>&lt;p&gt;Stake is a global crypto casino and sportsbook where users gamble online using cryptocurrencies. It offers a wide range of slots, live dealer tables, and sports betting markets, and is well known for its loyalty program and high-profile sponsorships.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gamdom</title>
+      <link>http://localhost:1313/casinos/gamdom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/gamdom/</guid>
+      <description>&lt;p&gt;Gamdom is an online crypto-based gambling platform that offers casino games, sports betting, and esports wagering. Founded in 2016, it originally focused on CS:GO skin betting but has since evolved into a full-scale crypto casino with thousands of games, live betting options, and cryptocurrency payments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MetaWin</title>
+      <link>http://localhost:1313/casinos/metawin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/metawin/</guid>
+      <description>&lt;p&gt;MetaWin is a crypto-powered online gaming and rewards platform where users can play casino-style games, enter competitions, and win prizes using blockchain technology. It focuses on transparent, provably fair gameplay and often integrates cryptocurrency wallets for deposits and payouts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Roobet</title>
+      <link>http://localhost:1313/casinos/roobet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/roobet/</guid>
+      <description>&lt;p&gt;Roobet is an online crypto casino platform where users can play games like slots, roulette, and live dealer games using cryptocurrencies. It also offers a proprietary game called Crash, where players bet on a rising multiplier and cash out before it drops.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rollbit</title>
+      <link>http://localhost:1313/casinos/rollbit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/rollbit/</guid>
+      <description>&lt;p&gt;Rollbit is a crypto-based online platform where users can gamble, bet on sports, and trade crypto using digital currencies instead of traditional money. It features unique in-house games alongside a full sportsbook and NFT marketplace integration.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
