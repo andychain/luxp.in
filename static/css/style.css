@@ -413,9 +413,124 @@ header {
 /* ══════════════════════════════════════
    RESPONSIVE
    ══════════════════════════════════════ */
+
+/* ══════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════ */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg2);
+  margin-top: 24px;
+}
+
+.footer-inner {
+  max-width: 1340px; margin: 0 auto;
+  padding: 56px 24px 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+/* Brand column */
+.footer-logo {
+  font-family: var(--font-head); font-weight: 800;
+  font-size: 1.18rem; letter-spacing: -0.04em;
+  color: var(--text); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 7px;
+  margin-bottom: 12px;
+}
+.footer-tagline {
+  font-size: 0.82rem; color: var(--text-muted);
+  line-height: 1.65; margin-bottom: 18px;
+}
+.footer-badges { display: flex; flex-wrap: wrap; gap: 7px; }
+.footer-badge {
+  font-family: var(--font-mono); font-size: 0.62rem; font-weight: 500;
+  color: var(--text-dim); background: var(--pill-bg);
+  border: 1px solid var(--border); border-radius: 20px;
+  padding: 3px 10px;
+}
+
+/* Nav columns */
+.footer-col { display: flex; flex-direction: column; gap: 10px; }
+.footer-col-title {
+  font-family: var(--font-mono); font-size: 0.62rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--text-muted); margin-bottom: 4px;
+}
+.footer-link {
+  font-size: 0.82rem; color: var(--text-dim);
+  text-decoration: none; -webkit-text-decoration: none;
+  transition: color var(--transition);
+}
+.footer-link:hover { color: var(--accent); text-decoration: none; }
+/* Ensure footer logo link never shows browser default blue */
+.footer-logo, .footer-link, .footer-rg a { color: inherit; }
+.footer-logo { color: var(--text); }
+.footer-link { color: var(--text-dim); }
+.footer-rg a { color: var(--accent); }
+
+/* Responsible gambling banner */
+.footer-rg {
+  max-width: 1340px; margin: 0 auto;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.footer-rg-icon {
+  font-size: 0.85rem; color: var(--gold);
+  flex-shrink: 0; margin-top: 1px;
+}
+.footer-rg p {
+  font-family: var(--font-mono); font-size: 0.67rem;
+  color: var(--text-muted); line-height: 1.7;
+}
+.footer-rg a {
+  color: var(--accent); text-decoration: none;
+  transition: opacity var(--transition);
+}
+.footer-rg a:hover { opacity: 0.75; }
+
+/* Bottom bar */
+.footer-bottom {
+  max-width: 1340px; margin: 0 auto;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+  justify-content: space-between;
+}
+.footer-copy {
+  font-family: var(--font-mono); font-size: 0.65rem;
+  color: var(--text-muted); flex-shrink: 0;
+}
+.footer-copy-note {
+  font-family: var(--font-mono); font-size: 0.63rem;
+  color: var(--text-muted); opacity: 0.55;
+  text-align: right; max-width: 560px;
+}
+
+@media (max-width: 860px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 40px 20px 32px;
+  }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-rg, .footer-bottom { padding-left: 20px; padding-right: 20px; }
+}
+
 @media (max-width: 640px) {
   header { padding: 0 14px; gap: 10px; }
   .nav-tabs { display: none; }
   .hero { padding: 28px 14px 18px; }
   .filter-bar, .main { padding-left: 14px; padding-right: 14px; }
+  .footer-inner { padding: 32px 14px 28px; }
+  .footer-rg, .footer-bottom { padding-left: 14px; padding-right: 14px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .footer-copy-note { text-align: left; max-width: 100%; }
+}
+
+@media (max-width: 400px) {
+  .footer-inner { grid-template-columns: 1fr; }
 }
