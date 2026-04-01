@@ -1,5 +1,5 @@
 +++
 country = "Australia"
 flag = "🇦🇺"
-limit = 8
+code = "au"
 +++

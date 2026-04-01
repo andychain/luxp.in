@@ -6,6 +6,7 @@ link: ""
 badge: ""
 img: "/img/casinos/{{ .Name }}.png"
 tags: []
+countries: ["ca", "au", "nz", "in"]
 draft: false
 ---
 Write your 2–3 sentence casino description here. Avoid apostrophes (use "it is" not "it's").

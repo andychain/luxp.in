@@ -1,5 +1,5 @@
 +++
 country = "India"
 flag = "🇮🇳"
-limit = 8
+code = "in"
 +++
