@@ -5,7 +5,7 @@ url_label: "metawin.com"
 link: "https://metawin.com/529fd94a"
 badge: "new"
 img: "/img/casinos/metawin.png"
-tags: ["NFT", "Slots", "Live"]
+tags: ["Casino"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---

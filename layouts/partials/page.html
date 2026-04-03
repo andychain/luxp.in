@@ -75,14 +75,25 @@
 </div>
 
 <!-- ══ FILTER BAR ══ -->
+{{- $all     := sort (where site.RegularPages "Section" "casinos") "Weight" -}}
+{{- $casinos := where $all ".Params.countries" "intersect" (slice $code) -}}
+
+{{- $allTags := slice -}}
+{{- range $casinos -}}
+  {{- $allTags = $allTags | append .Params.tags -}}
+{{- end -}}
+{{- $uniqueTags := $allTags | uniq -}}
+
 <div class="filter-bar">
-  <div class="filter-pill active" onclick="setF(this)">♠ All <span class="filter-count">{{ len (where site.RegularPages "Section" "casinos") }}</span></div>
-  <div class="filter-pill" onclick="setF(this)">🎰 Slots <span class="filter-count">18</span></div>
-  <div class="filter-pill" onclick="setF(this)">🃏 Live Casino <span class="filter-count">12</span></div>
-  <div class="filter-pill" onclick="setF(this)">⚽ Sports <span class="filter-count">9</span></div>
-  <div class="filter-pill" onclick="setF(this)">♠ Poker <span class="filter-count">7</span></div>
-  <div class="filter-pill" onclick="setF(this)">🎲 Table Games <span class="filter-count">6</span></div>
-  <div class="filter-pill" onclick="setF(this)">📱 Mobile <span class="filter-count">5</span></div>
+  <div class="filter-pill active" data-tag="" onclick="setF(this)">♠ All <span class="filter-count">{{ len $casinos }}</span></div>
+  {{- range $uniqueTags -}}
+    {{- $tag := . -}}
+    {{- $count := 0 -}}
+    {{- range $casinos -}}
+      {{- if in .Params.tags $tag -}}{{- $count = add $count 1 -}}{{- end -}}
+    {{- end -}}
+    <div class="filter-pill" data-tag="{{ $tag }}" onclick="setF(this)">{{ $tag }} <span class="filter-count">{{ $count }}</span></div>
+  {{- end -}}
 </div>
 
 <!-- ══ MAIN ══ -->
@@ -110,7 +121,7 @@
       {{- $badgeLabel  := index $badgeLabels $badge -}}
       {{- $badgeClass  := index $badgeClasses $badge -}}
 
-      <div class="casino-card" onclick="window.open('{{ $dest }}','_blank')">
+      <div class="casino-card" data-tags="{{ delimit .Params.tags "," }}" onclick="window.open('{{ $dest }}','_blank')">
         <div class="card-inner">
           <div class="card-top">
             <div class="card-favicon">

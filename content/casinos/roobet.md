@@ -5,7 +5,7 @@ url_label: "roobet.com"
 link: "https://roobet.com/?ref=luxpin"
 badge: "hot"
 img: "/img/casinos/roobet.png"
-tags: ["Sports", "Live Dealer", "Baccarat"]
+tags: ["Casino", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---

@@ -38,4 +38,14 @@ function setTab(el) {
 function setF(el) {
   document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
   el.classList.add('active');
+
+  const tag = el.dataset.tag;
+  document.querySelectorAll('.casino-card').forEach(card => {
+    if (!tag) {
+      card.style.display = '';
+    } else {
+      const cardTags = card.dataset.tags.split(',').map(t => t.trim());
+      card.style.display = cardTags.includes(tag) ? '' : 'none';
+    }
+  });
 }

@@ -5,7 +5,7 @@ url_label: "betpanda.io"
 link: "https://betpanda.io/?referral=6JJJQXM&type=registration&modal=user&isReferral=true"
 badge: "new"
 img: "/img/casinos/betpanda.png"
-tags: ["Anonymity", "Sports", "Live Casino"]
+tags: ["Sports", "Casino"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---

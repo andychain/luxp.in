@@ -5,7 +5,7 @@ url_label: "rollbit.com"
 link: "https://rollbit.com/referral/luxpin"
 badge: "new"
 img: "/img/casinos/rollbit.jpg"
-tags: ["Casino", "Slots", "Free Spins"]
+tags: ["Casino", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---
