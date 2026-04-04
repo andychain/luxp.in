@@ -68,7 +68,14 @@
       <link>http://localhost:1313/casinos/paradex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/casinos/paradex/</guid>
-      <description>&lt;p&gt;Stake is a global crypto casino and sportsbook where users gamble online using cryptocurrencies. It offers a wide range of slots, live dealer tables, and sports betting markets, and is well known for its loyalty program and high-profile sponsorships.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Paradex is a decentralized derivatives exchange (Perp DEX) that lets users trade perpetual futures, options, and spot markets with self-custody, combining CEX-like speed with on-chain settlement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>edgeX</title>
+      <link>http://localhost:1313/casinos/edgex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/edgex/</guid>
+      <description>&lt;p&gt;EdgeX is a high-performance Perp DEX that combines off-chain order matching with on-chain settlement, offering fast, CEX-like trading with self-custody and deep liquidity.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
