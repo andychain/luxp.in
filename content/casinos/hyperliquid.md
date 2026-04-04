@@ -9,4 +9,4 @@ tags: ["Perp DEX"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---
-EdgeX is a high-performance Perp DEX that combines off-chain order matching with on-chain settlement, offering fast, CEX-like trading with self-custody and deep liquidity.
+Hyperliquid — A high-performance Perp DEX built on its own Layer 1 blockchain, offering fully on-chain order book trading with CEX-like speed, deep liquidity, and self-custody.
