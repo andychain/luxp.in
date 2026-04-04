@@ -3,69 +3,75 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/casinos/bc-game/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/betfury/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/betpanda/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/stake/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/gamdom/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/metawin/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/roobet/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/rollbit/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/au/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/in/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/nz/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/anonymity/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/baccarat/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/blackjack/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/casino/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/casinos/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/crypto-casino/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/crypto-staking/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/free-spins/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/live/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/live-casino/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/live-dealer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/lottery/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/loyalty/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/nft/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/rewards/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/slots/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/sports/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/table-games/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/vip/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
