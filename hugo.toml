@@ -1,3 +1,7 @@
 baseURL = 'https://luxp.in/'
 locale = 'en-us'
 title = 'luxpin'
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5

@@ -1,9 +1,17 @@
+{{- $country := .Params.country | default "Canada" -}}
+{{- $flag    := .Params.flag    | default "🇨🇦" -}}
+{{- $code    := .Params.code    | default "ca" -}}
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>luxpin</title>
+  <title>luxpin — Crypto Casino Directory for {{ $country }}</title>
+  <meta name="description" content="Top-rated crypto platforms curated for {{ $country }}. Reviewed, ranked, and trusted." />
+  <meta property="og:title" content="luxpin — Crypto Casino Directory for {{ $country }}" />
+  <meta property="og:description" content="Top-rated crypto platforms curated for {{ $country }}. Reviewed, ranked, and trusted." />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="website" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,10 +33,6 @@
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
 </head>
 <body>
-
-{{- $country := .Params.country | default "Canada" -}}
-{{- $flag    := .Params.flag    | default "🇨🇦" -}}
-{{- $code    := .Params.code    | default "ca" -}}
 
 {{- $countries := slice
   (dict "flag" "🇨🇦" "name" "Canada"      "url" "/")
