@@ -63,5 +63,12 @@
       <guid>http://localhost:1313/casinos/rollbit/</guid>
       <description>&lt;p&gt;Rollbit is a crypto-based online platform where users can gamble, bet on sports, and trade crypto using digital currencies instead of traditional money. It features unique in-house games alongside a full sportsbook and NFT marketplace integration.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Paradex</title>
+      <link>http://localhost:1313/casinos/paradex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/paradex/</guid>
+      <description>&lt;p&gt;Stake is a global crypto casino and sportsbook where users gamble online using cryptocurrencies. It offers a wide range of slots, live dealer tables, and sports betting markets, and is well known for its loyalty program and high-profile sponsorships.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

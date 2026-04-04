@@ -34,6 +34,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/casinos/paradex/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -63,6 +67,14 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/lottery/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/perp/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/perp-dex/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
