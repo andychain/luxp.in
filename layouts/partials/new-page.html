@@ -1,0 +1,206 @@
+{{- $country := .Params.country | default "Canada" -}}
+{{- $flag    := .Params.flag    | default "🇨🇦" -}}
+{{- $code    := .Params.code    | default "ca" -}}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✦ New Platforms — Luxpin</title>
+  <meta name="description" content="The newest crypto platforms available in {{ $country }}. Fresh launches, reviewed and trusted." />
+  <meta property="og:title" content="✦ New Platforms — Luxpin" />
+  <meta property="og:description" content="The newest crypto platforms available in {{ $country }}. Fresh launches, reviewed and trusted." />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ "favicon-96x96.png" | relURL }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ "android-chrome-192x192.png" | relURL }}" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSQT12KZKE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GSQT12KZKE');
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+</head>
+<body>
+
+{{- $countries := slice
+  (dict "flag" "🇨🇦" "name" "Canada"      "url" "/new")
+  (dict "flag" "🇦🇺" "name" "Australia"   "url" "/au/new")
+  (dict "flag" "🇳🇿" "name" "New Zealand" "url" "/nz/new")
+  (dict "flag" "🇮🇳" "name" "India"       "url" "/in/new")
+-}}
+
+<!-- ══ HEADER ══ -->
+<header>
+  <a class="logo" href="{{ if eq $code "ca" }}/{{ else }}/{{ $code }}{{ end }}"><span class="logo-gem"></span>luxpin</a>
+
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="setTab(this)">Markets</button>
+    <button class="nav-tab" onclick="setTab(this)">Activity</button>
+    <button class="nav-tab" onclick="setTab(this)">Leaderboard</button>
+    <button class="nav-tab" onclick="setTab(this)">Explore</button>
+  </div>
+
+  <div class="header-spacer"></div>
+
+  <!-- Country Switcher -->
+  <div class="country-switcher" id="cs">
+    <button class="country-btn" onclick="toggleCS()">
+      <span>{{ $flag }}</span>
+      <span>{{ $country }}</span>
+      <span class="country-chevron">▼</span>
+    </button>
+    <div class="country-dropdown">
+      {{- range $countries -}}
+        <a class="country-item{{ if eq .name $country }} active{{ end }}" href="{{ .url }}">
+          {{ .flag }} {{ .name }}
+        </a>
+      {{- end -}}
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">☀️</button>
+</header>
+
+<!-- ══ HERO ══ -->
+<div class="hero">
+  <div class="hero-eyebrow">✦ Just Launched</div>
+  <h1 class="hero-title">Fresh platforms,<br/><span class="gold">worth knowing.</span></h1>
+  <p class="hero-sub">The newest crypto platforms available in {{ $country }}. Reviewed before they hit the mainstream.</p>
+</div>
+
+<!-- ══ MAIN ══ -->
+{{- $all       := sort (where site.RegularPages "Section" "casinos") "Weight" -}}
+{{- $bycountry := where $all ".Params.countries" "intersect" (slice $code) -}}
+{{- $casinos   := where $bycountry ".Params.badge" "eq" "new" -}}
+
+<main class="main">
+
+  <div class="section-head">
+    <div class="section-title">✦ New Platforms <span style="font-size:0.75em;opacity:0.5;font-weight:400;">{{ len $casinos }}</span></div>
+  </div>
+
+  <div class="card-grid">
+    {{- $badgeLabels  := dict "top" "★ Top Pick" "hot" "🔥 Hot" "new" "✦ New" "verified" "✓ Verified" -}}
+    {{- $badgeClasses := dict "top" "badge-top" "hot" "badge-hot" "new" "badge-new" "verified" "badge-verified" -}}
+
+    {{- range $casinos -}}
+      {{- $dest        := cond (ne .Params.link "") .Params.link (printf "https://%s" .Params.url_label) -}}
+      {{- $words       := split .Title " " -}}
+      {{- $init        := "" -}}
+      {{- range $words -}}{{- $init = printf "%s%s" $init (substr . 0 1) -}}{{- end -}}
+      {{- $initials    := upper (substr $init 0 2) -}}
+      {{- $badge       := .Params.badge -}}
+      {{- $badgeLabel  := index $badgeLabels $badge -}}
+      {{- $badgeClass  := index $badgeClasses $badge -}}
+
+      <div class="casino-card" data-tags="{{ delimit .Params.tags "," }}" onclick="window.open('{{ $dest }}','_blank')">
+        <div class="card-inner">
+          <div class="card-top">
+            <div class="card-favicon">
+              <img
+                src="{{ .Params.img }}"
+                alt="{{ .Title }} logo"
+                class="favicon-img"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+              />
+              <span class="favicon-fallback" style="display:none">{{ $initials }}</span>
+            </div>
+            <div class="card-name-block">
+              <div class="card-name">{{ .Title }}</div>
+              <a class="card-url" href="{{ $dest }}" target="_blank" onclick="event.stopPropagation()">
+                {{ .Params.url_label }} <span class="card-url-arrow">↗</span>
+              </a>
+            </div>
+            {{- if $badgeLabel -}}
+            <div class="card-badge {{ $badgeClass }}">{{ $badgeLabel }}</div>
+            {{- end -}}
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-desc">{{ .Plain }}</div>
+        </div>
+        <div class="card-footer">
+          {{- range .Params.tags -}}
+          <span class="card-tag">{{ . }}</span>
+          {{- end -}}
+          <span class="card-footer-arrow">→</span>
+        </div>
+      </div>
+    {{- end -}}
+
+    {{- if eq (len $casinos) 0 -}}
+    <p style="color:var(--muted);padding:2rem 0;">No new platforms listed for {{ $country }} yet.</p>
+    {{- end -}}
+  </div>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="footer-logo" href="{{ if eq $code "ca" }}/{{ else }}/{{ $code }}{{ end }}"><span class="logo-gem"></span>luxpin</a>
+      <p class="footer-tagline">The sharpest crypto casino<br/>directory on the web.</p>
+      <div class="footer-badges">
+        <span class="footer-badge">⚡ Updated daily</span>
+        <span class="footer-badge">🔒 Affiliate disclosed</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Directory</div>
+      <a class="footer-link" href="#">All Casinos</a>
+      <a class="footer-link" href="#">Slots</a>
+      <a class="footer-link" href="#">Live Casino</a>
+      <a class="footer-link" href="#">Sports Betting</a>
+      <a class="footer-link" href="#">New Casinos</a>
+      <a class="footer-link" href="#">Top Picks</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a class="footer-link" href="#">About</a>
+      <a class="footer-link" href="#">How We Rate</a>
+      <a class="footer-link" href="#">Advertise</a>
+      <a class="footer-link" href="#">Contact</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Legal</div>
+      <a class="footer-link" href="#">Terms of Use</a>
+      <a class="footer-link" href="#">Privacy Policy</a>
+      <a class="footer-link" href="#">Cookie Policy</a>
+      <a class="footer-link" href="#">Affiliate Disclosure</a>
+    </div>
+  </div>
+  <div class="footer-rg">
+    <span class="footer-rg-icon">⚠</span>
+    <p>Gambling involves risk. Only gamble with money you can afford to lose. If you feel you may have a gambling problem, please seek help. Resources: <a href="https://www.ncpgambling.org" target="_blank" rel="noopener">NCPG</a> · <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware</a> · <a href="https://www.gamblingtherapy.org" target="_blank" rel="noopener">Gambling Therapy</a></p>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© {{ now.Year }} luxpin. All rights reserved.</span>
+    <span class="footer-copy-note">Luxpin is an independent affiliate directory. We may earn a commission when you sign up through our links, at no extra cost to you.</span>
+  </div>
+</footer>
+
+<script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>
