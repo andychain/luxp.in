@@ -44,10 +44,9 @@
   <a class="logo" href="/"><span class="logo-gem"></span>luxpin</a>
 
   <div class="nav-tabs">
-    <button class="nav-tab active" onclick="setTab(this)">Markets</button>
-    <button class="nav-tab" onclick="setTab(this)">Activity</button>
-    <button class="nav-tab" onclick="setTab(this)">Leaderboard</button>
-    <button class="nav-tab" onclick="setTab(this)">Explore</button>
+    <a class="nav-tab" href="/top">★ Top Picks</a>
+    <a class="nav-tab" href="/hot">🔥 Hot</a>
+    <a class="nav-tab" href="/new">✦ New</a>
   </div>
 
   <div class="header-spacer"></div>
@@ -72,7 +71,17 @@
 
   
   <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">☀️</button>
+
+  
+  <button class="hamburger" id="hamburger" onclick="toggleHamburger()">☰</button>
 </header>
+
+
+<div class="mobile-menu" id="mobileMenu">
+  <a class="mobile-nav-link" href="/top">★ Top Picks</a>
+  <a class="mobile-nav-link" href="/hot">🔥 Hot</a>
+  <a class="mobile-nav-link" href="/new">✦ New</a>
+</div>
 
 
 <div class="hero">
@@ -133,7 +142,7 @@
               <a class="card-url" href="https://betfury.com/?r=User3078608" target="_blank" onclick="event.stopPropagation()">
                 betfury.com <span class="card-url-arrow">↗</span>
               </a>
-            </div><div class="card-badge badge-verified">✓ Verified</div></div>
+            </div><div class="card-badge badge-new">✦ New</div></div>
           <div class="card-divider"></div>
           <div class="card-desc">BetFury is an online crypto gambling and gaming platform that allows users to play casino-style games, place bets, and earn rewards using cryptocurrencies like Bitcoin. It combines traditional online casino features with blockchain-based elements, including its native BFG token, which users can earn and stake for dividends. The platform is known for its reward system, promotions, and integration of decentralized finance concepts into gaming.
 </div>
@@ -349,12 +358,10 @@
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Directory</div>
-      <a class="footer-link" href="#">All Casinos</a>
-      <a class="footer-link" href="#">Slots</a>
-      <a class="footer-link" href="#">Live Casino</a>
-      <a class="footer-link" href="#">Sports Betting</a>
-      <a class="footer-link" href="#">New Casinos</a>
-      <a class="footer-link" href="#">Top Picks</a>
+      <a class="footer-link" href="/">All Platforms</a>
+      <a class="footer-link" href="/top">★ Top Picks</a>
+      <a class="footer-link" href="/hot">🔥 Hot</a>
+      <a class="footer-link" href="/new">✦ New</a>
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Company</div>

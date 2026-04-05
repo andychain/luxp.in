@@ -115,6 +115,7 @@ header {
   cursor: pointer; color: var(--text-muted);
   background: transparent; border: none;
   transition: all var(--transition); font-family: var(--font-head);
+  text-decoration: none; white-space: nowrap;
 }
 .nav-tab.active { background: var(--card-bg); color: var(--text); box-shadow: 0 1px 6px rgba(0,0,0,0.25); }
 .nav-tab:hover:not(.active) { color: var(--text-dim); }
@@ -359,7 +360,6 @@ header {
 .badge-new      { color: #5ce8a4; border-color: rgba(92,232,164,0.35);  background: rgba(92,232,164,0.08); }
 .badge-hot      { color: #f0945a; border-color: rgba(240,148,90,0.35);  background: rgba(240,148,90,0.08); }
 .badge-top      { color: var(--gold); border-color: var(--gold-dim);    background: rgba(201,168,76,0.08); }
-.badge-verified { color: #7eb8f7; border-color: rgba(126,184,247,0.35); background: rgba(126,184,247,0.08); }
 
 /* Divider */
 .card-divider { height: 1px; background: var(--border); margin: 0 -20px; }
@@ -509,6 +509,35 @@ header {
   text-align: right; max-width: 560px;
 }
 
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: var(--pill-bg); border: 1px solid var(--border);
+  border-radius: 10px; padding: 6px 10px;
+  font-size: 1.1rem; cursor: pointer; color: var(--text);
+  transition: background var(--transition);
+  flex-shrink: 0;
+}
+.hamburger:hover { background: var(--card-bg); }
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  position: fixed; top: 57px; left: 0; right: 0;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  flex-direction: column; z-index: 999;
+  padding: 8px 0;
+}
+.mobile-menu.open { display: flex; }
+.mobile-nav-link {
+  padding: 13px 20px;
+  font-family: var(--font-head); font-size: 0.9rem; font-weight: 600;
+  color: var(--text-muted); text-decoration: none;
+  transition: color var(--transition), background var(--transition);
+}
+.mobile-nav-link:hover { color: var(--text); background: var(--card-bg); }
+.mobile-nav-link.active { color: var(--gold); }
+
 @media (max-width: 860px) {
   .footer-inner {
     grid-template-columns: 1fr 1fr;
@@ -520,8 +549,9 @@ header {
 }
 
 @media (max-width: 640px) {
-  header { padding: 0 14px; gap: 10px; }
+  header { padding: 0 14px; gap: 8px; }
   .nav-tabs { display: none; }
+  .hamburger { display: block; }
   .hero { padding: 28px 14px 18px; }
   .filter-bar, .main { padding-left: 14px; padding-right: 14px; }
   .footer-inner { padding: 32px 14px 28px; }

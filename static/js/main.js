@@ -28,8 +28,26 @@ document.addEventListener('click', e => {
 });
 
 /* ──────────────────────────────────────
-   NAV TABS & FILTERS
+   HAMBURGER MENU
    ────────────────────────────────────── */
+function toggleHamburger() {
+  const menu = document.getElementById('mobileMenu');
+  const btn  = document.getElementById('hamburger');
+  const open = menu.classList.toggle('open');
+  btn.textContent = open ? '✕' : '☰';
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', e => {
+  const menu = document.getElementById('mobileMenu');
+  const btn  = document.getElementById('hamburger');
+  if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.remove('open');
+    btn.textContent = '☰';
+  }
+});
+
+
 function setTab(el) {
   document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
   el.classList.add('active');

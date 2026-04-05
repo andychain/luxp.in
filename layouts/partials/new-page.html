@@ -1,6 +1,7 @@
 {{- $country := .Params.country | default "Canada" -}}
 {{- $flag    := .Params.flag    | default "🇨🇦" -}}
 {{- $code    := .Params.code    | default "ca" -}}
+{{- $prefix  := cond (eq $code "ca") "" (printf "/%s" $code) -}}
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
@@ -55,10 +56,9 @@
   <a class="logo" href="{{ if eq $code "ca" }}/{{ else }}/{{ $code }}{{ end }}"><span class="logo-gem"></span>luxpin</a>
 
   <div class="nav-tabs">
-    <button class="nav-tab active" onclick="setTab(this)">Markets</button>
-    <button class="nav-tab" onclick="setTab(this)">Activity</button>
-    <button class="nav-tab" onclick="setTab(this)">Leaderboard</button>
-    <button class="nav-tab" onclick="setTab(this)">Explore</button>
+    <a class="nav-tab" href="{{ $prefix }}/top">★ Top Picks</a>
+    <a class="nav-tab" href="{{ $prefix }}/hot">🔥 Hot</a>
+    <a class="nav-tab active" href="{{ $prefix }}/new">✦ New</a>
   </div>
 
   <div class="header-spacer"></div>
@@ -81,7 +81,17 @@
 
   <!-- Theme Toggle -->
   <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">☀️</button>
+
+  <!-- Hamburger (mobile) -->
+  <button class="hamburger" id="hamburger" onclick="toggleHamburger()">☰</button>
 </header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a class="mobile-nav-link" href="{{ $prefix }}/top">★ Top Picks</a>
+  <a class="mobile-nav-link" href="{{ $prefix }}/hot">🔥 Hot</a>
+  <a class="mobile-nav-link active" href="{{ $prefix }}/new">✦ New</a>
+</div>
 
 <!-- ══ HERO ══ -->
 <div class="hero">
@@ -102,8 +112,8 @@
   </div>
 
   <div class="card-grid">
-    {{- $badgeLabels  := dict "top" "★ Top Pick" "hot" "🔥 Hot" "new" "✦ New" "verified" "✓ Verified" -}}
-    {{- $badgeClasses := dict "top" "badge-top" "hot" "badge-hot" "new" "badge-new" "verified" "badge-verified" -}}
+    {{- $badgeLabels  := dict "top" "★ Top Pick" "hot" "🔥 Hot" "new" "✦ New" -}}
+    {{- $badgeClasses := dict "top" "badge-top" "hot" "badge-hot" "new" "badge-new" -}}
 
     {{- range $casinos -}}
       {{- $dest        := cond (ne .Params.link "") .Params.link (printf "https://%s" .Params.url_label) -}}
@@ -169,12 +179,10 @@
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Directory</div>
-      <a class="footer-link" href="#">All Casinos</a>
-      <a class="footer-link" href="#">Slots</a>
-      <a class="footer-link" href="#">Live Casino</a>
-      <a class="footer-link" href="#">Sports Betting</a>
-      <a class="footer-link" href="#">New Casinos</a>
-      <a class="footer-link" href="#">Top Picks</a>
+      <a class="footer-link" href="{{ $prefix }}/">All Platforms</a>
+      <a class="footer-link" href="{{ $prefix }}/top">★ Top Picks</a>
+      <a class="footer-link" href="{{ $prefix }}/hot">🔥 Hot</a>
+      <a class="footer-link" href="{{ $prefix }}/new">✦ New</a>
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Company</div>

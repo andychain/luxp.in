@@ -3,7 +3,7 @@ title: "BetFury"
 weight: 2
 url_label: "betfury.com"
 link: "https://betfury.com/?r=User3078608"
-badge: "verified"
+badge: "new"
 img: "/img/casinos/betfury.png"
 tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
