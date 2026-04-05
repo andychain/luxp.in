@@ -5,7 +5,7 @@ url_label: "betfury.com"
 link: "https://betfury.com/?r=User3078608"
 badge: "verified"
 img: "/img/casinos/betfury.png"
-tags: ["Casino", "Sports"]
+tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---

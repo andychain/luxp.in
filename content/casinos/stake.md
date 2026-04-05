@@ -5,7 +5,7 @@ url_label: "stake.com"
 link: "https://stake.com/?c=t9Hcn0NQ"
 badge: "hot"
 img: "/img/casinos/stake.png"
-tags: ["Casino", "Sports"]
+tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---

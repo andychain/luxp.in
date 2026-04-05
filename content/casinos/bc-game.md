@@ -5,7 +5,7 @@ url_label: "bc.game"
 link: "https://bc.game/i-1zsibyr3p-n/"
 badge: "top"
 img: "/img/casinos/bcgame.png"
-tags: ["Casino", "Sports", "Lottery"]
+tags: ["Slots", "Sports", "Lottery"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
 ---
