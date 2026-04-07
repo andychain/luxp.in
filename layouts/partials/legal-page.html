@@ -1,0 +1,117 @@
+{{- $title := .Title -}}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ $title }} — Luxpin</title>
+  <meta name="description" content="{{ $title }} for Luxpin, the native crypto platform directory." />
+  <meta property="og:title" content="{{ $title }} — Luxpin" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ "android-chrome-192x192.png" | relURL }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSQT12KZKE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GSQT12KZKE');
+  </script>
+
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <a class="logo" href="/"><span class="logo-gem"></span>luxpin</a>
+
+  <div class="nav-tabs">
+    <a class="nav-tab" href="/top">★ Top Picks</a>
+    <a class="nav-tab" href="/hot">🔥 Hot</a>
+    <a class="nav-tab" href="/new">✦ New</a>
+  </div>
+
+  <div class="header-spacer"></div>
+
+  <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">☀️</button>
+  <button class="hamburger" id="hamburger" onclick="toggleHamburger()">☰</button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a class="mobile-nav-link" href="/top">★ Top Picks</a>
+  <a class="mobile-nav-link" href="/hot">🔥 Hot</a>
+  <a class="mobile-nav-link" href="/new">✦ New</a>
+</div>
+
+<!-- ══ LEGAL CONTENT ══ -->
+<div class="legal-wrap">
+  <div class="legal-inner">
+    <h1 class="legal-title">{{ $title }}</h1>
+    <div class="legal-date">Last updated: {{ now.Format "January 2, 2006" }}</div>
+    <div class="legal-body">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/"><span class="logo-gem"></span>luxpin</a>
+      <div class="footer-badges">
+        <span class="footer-badge">⚡ Updated daily</span>
+        <span class="footer-badge">🔒 Affiliate disclosed</span>
+      </div>
+      <div class="footer-social">
+        <a class="footer-social-link" href="https://t.me/LuxpinChat" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Directory</div>
+      <a class="footer-link" href="/top">★ Top Picks</a>
+      <a class="footer-link" href="/hot">🔥 Hot</a>
+      <a class="footer-link" href="/new">✦ New</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a class="footer-link" href="#">About</a>
+      <a class="footer-link" href="#">How We Rate</a>
+      <a class="footer-link" href="#">Advertise</a>
+      <a class="footer-link" href="#">Contact</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Legal</div>
+      <a class="footer-link" href="/terms">Terms of Use</a>
+      <a class="footer-link" href="/privacy">Privacy Policy</a>
+      <a class="footer-link" href="/cookies">Cookie Policy</a>
+      <a class="footer-link" href="/disclosure">Affiliate Disclosure</a>
+    </div>
+  </div>
+  <div class="footer-rg">
+    <span class="footer-rg-icon">⚠</span>
+    <p>Betting and investing involve risk. Only bet and invest with money you can afford to lose. If you feel you may have a gambling problem, please seek help. Resources: <a href="https://www.ncpgambling.org" target="_blank" rel="noopener">NCPG</a> · <a href="https://www.begambleaware.org" target="_blank" rel="noopener">BeGambleAware</a> · <a href="https://www.gamblingtherapy.org" target="_blank" rel="noopener">Gambling Therapy</a></p>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© {{ now.Year }} luxpin. All rights reserved.</span>
+    <span class="footer-copy-note">Luxpin is an independent affiliate directory. We may earn a commission when you sign up through our links, at no extra cost to you.</span>
+  </div>
+</footer>
+
+<script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>
