@@ -3,7 +3,7 @@ title: "Rollbit"
 weight: 8
 url_label: "rollbit.com"
 link: "https://rollbit.com/referral/luxpin"
-badge: "new"
+badge: "hot"
 img: "/img/casinos/rollbit.jpg"
 tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]

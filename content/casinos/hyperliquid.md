@@ -3,7 +3,7 @@ title: "Hyperliquid"
 weight: 11
 url_label: "hyperliquid.xyz"
 link: "https://app.hyperliquid.xyz/trade"
-badge: "new"
+badge: "hot"
 img: "/img/casinos/hyperliquid.png"
 tags: ["Perp DEX"]
 countries: ["ca", "au", "nz", "in"]
