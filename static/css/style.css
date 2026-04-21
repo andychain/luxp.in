@@ -148,6 +148,7 @@ header {
   padding: 9px 12px; border-radius: var(--radius-sm);
   cursor: pointer; font-size: 0.81rem; font-weight: 500;
   color: var(--text-dim); transition: background var(--transition), color var(--transition);
+  text-decoration: none;
 }
 .country-item:hover, .country-item.active { background: var(--pill-hover); color: var(--text); }
 .country-item.active { color: var(--accent); }
