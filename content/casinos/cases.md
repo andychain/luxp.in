@@ -2,7 +2,7 @@
 title: "Cases.gg"
 weight: 14
 url_label: "cases.com"
-link: "cases.gg/r/LUXPIN"
+link: "https://cases.gg/r/LUXPIN"
 badge: "new"
 img: "/img/casinos/casesgg.png"
 tags: ["Mystery Box"]

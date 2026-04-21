@@ -106,6 +106,41 @@
       <description>&lt;p&gt;Cases.gg is an online mystery box platform where users deposit money (often crypto), open virtual “cases,” and receive random real-world items such as electronics, fashion, or collectibles.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>BigBux</title>
+      <link>http://localhost:1313/casinos/bigbux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/bigbux/</guid>
+      <description>&lt;p&gt;A gamified mystery box platform that lets users buy and open randomized boxes with transparent odds, compete in battles, and win physical prizes or items of varying value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RillaBox</title>
+      <link>http://localhost:1313/casinos/rillabox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/rillabox/</guid>
+      <description>&lt;p&gt;A Web3 lootbox site where you spend crypto to open randomized boxes for a chance to win physical items or cash-equivalent value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PackDraw</title>
+      <link>http://localhost:1313/casinos/packdraw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/packdraw/</guid>
+      <description>&lt;p&gt;A gamified unboxing platform where you open paid digital packs to win random prizes or crypto value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HypeDrop</title>
+      <link>http://localhost:1313/casinos/hypedrop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/hypedrop/</guid>
+      <description>&lt;p&gt;A gamified lootbox site where you open cases for a chance to win physical prizes or crypto value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EmpireDrop</title>
+      <link>http://localhost:1313/casinos/empiredrop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/casinos/empiredrop/</guid>
+      <description>&lt;p&gt;A virtual lootbox platform where you pay to open boxes and win random real-world items with verifiable odds.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Affiliate Disclosure</title>
       <link>http://localhost:1313/disclosure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
