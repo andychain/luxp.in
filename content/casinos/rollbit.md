@@ -1,6 +1,7 @@
 ---
 title: "Rollbit"
 weight: 8
+priority: 0.6
 url_label: "rollbit.com"
 link: "https://rollbit.com/referral/luxpin"
 badge: "hot"

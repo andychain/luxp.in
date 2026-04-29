@@ -1,6 +1,7 @@
 ---
 title: "JemLit"
 weight: 13
+priority: 0.6
 url_label: "jemlit.com"
 link: "https://jemlit.com/en/a/luxpin"
 badge: "new"

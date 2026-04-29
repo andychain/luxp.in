@@ -1,6 +1,7 @@
 ---
 title: "BC.GAME"
 weight: 1
+priority: 0.6
 url_label: "bc.game"
 link: "https://bc.game/i-1zsibyr3p-n/"
 badge: "top"

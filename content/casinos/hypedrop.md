@@ -1,6 +1,7 @@
 ---
 title: "HypeDrop"
 weight: 18
+priority: 0.6
 url_label: "hypedrop.com"
 link: "https://hypedrop.com/r/luxpin"
 badge: "new"

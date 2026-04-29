@@ -1,6 +1,7 @@
 ---
 title: "Paradex"
 weight: 9
+priority: 0.6
 url_label: "paradex.trade"
 link: "https://app.paradex.trade/r/luxpin"
 badge: "new"

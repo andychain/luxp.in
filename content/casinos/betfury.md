@@ -1,6 +1,7 @@
 ---
 title: "BetFury"
 weight: 2
+priority: 0.6
 url_label: "betfury.com"
 link: "https://betfury.com/?r=User3078608"
 badge: "new"

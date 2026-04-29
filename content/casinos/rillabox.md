@@ -1,6 +1,7 @@
 ---
 title: "RillaBox"
 weight: 16
+priority: 0.6
 url_label: "rillabox.com"
 link: "https://rillabox.com/ref/luxpin-YMT"
 badge: "new"

@@ -1,6 +1,7 @@
 ---
 title: "Gamdom"
 weight: 5
+priority: 0.6
 url_label: "gamdom.com"
 link: "https://gamdom.com/r/luxpin"
 badge: "top"

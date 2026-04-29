@@ -1,6 +1,7 @@
 ---
 title: "edgeX"
 weight: 10
+priority: 0.6
 url_label: "edgex.exchange"
 link: "https://pro.edgex.exchange/en-US/referral/513577840"
 badge: "new"

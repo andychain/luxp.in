@@ -1,6 +1,7 @@
 ---
 title: "Roobet"
 weight: 7
+priority: 0.6
 url_label: "roobet.com"
 link: "https://roobet.com/?ref=luxpin"
 badge: "hot"

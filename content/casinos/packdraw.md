@@ -1,6 +1,7 @@
 ---
 title: "PackDraw"
 weight: 17
+priority: 0.6
 url_label: "packdraw.com"
 link: "https://packdraw.com?ref=48830945"
 badge: "new"

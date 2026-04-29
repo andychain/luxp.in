@@ -1,6 +1,7 @@
 ---
 title: "Hyperliquid"
 weight: 11
+priority: 0.6
 url_label: "hyperliquid.xyz"
 link: "https://app.hyperliquid.xyz/trade"
 badge: "hot"

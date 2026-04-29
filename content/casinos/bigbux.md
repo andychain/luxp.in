@@ -1,6 +1,7 @@
 ---
 title: "BigBux"
 weight: 15
+priority: 0.6
 url_label: "bigbux.io"
 link: "https://bigbux.io"
 badge: "new"

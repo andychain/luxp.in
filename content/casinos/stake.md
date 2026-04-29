@@ -1,6 +1,7 @@
 ---
 title: "Stake"
 weight: 4
+priority: 0.6
 url_label: "stake.com"
 link: "https://stake.com/?c=t9Hcn0NQ"
 badge: "hot"

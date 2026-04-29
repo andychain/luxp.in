@@ -1,6 +1,7 @@
 ---
 title: "EmpireDrop"
 weight: 19
+priority: 0.6
 url_label: "empiredrop.com"
 link: "https://empiredrop.com?r=RA6IH40B3K"
 badge: "new"

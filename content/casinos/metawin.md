@@ -1,6 +1,7 @@
 ---
 title: "MetaWin"
 weight: 6
+priority: 0.6
 url_label: "metawin.com"
 link: "https://metawin.com/529fd94a"
 badge: "new"

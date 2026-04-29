@@ -1,6 +1,7 @@
 ---
 title: "BetPanda"
 weight: 3
+priority: 0.6
 url_label: "betpanda.io"
 link: "https://betpanda.io/?referral=6JJJQXM&type=registration&modal=user&isReferral=true"
 badge: "new"

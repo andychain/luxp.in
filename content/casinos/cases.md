@@ -1,6 +1,7 @@
 ---
 title: "Cases.gg"
 weight: 14
+priority: 0.6
 url_label: "cases.com"
 link: "https://cases.gg/r/LUXPIN"
 badge: "new"
