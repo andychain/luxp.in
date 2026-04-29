@@ -1,6 +1,11 @@
 +++
 title = "Cookie Policy"
 layout = "legal"
+
+
+[sitemap]
+  priority = 0.2
+  hangefreq = "yearly"
 +++
 
 ## What Are Cookies

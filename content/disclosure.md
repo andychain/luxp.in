@@ -1,6 +1,11 @@
 +++
 title = "Affiliate Disclosure"
 layout = "legal"
+
+
+[sitemap]
+  priority = 0.2
+  hangefreq = "yearly"
 +++
 
 ## Our Relationship with Listed Platforms

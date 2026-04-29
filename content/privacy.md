@@ -1,6 +1,11 @@
 +++
 title = "Privacy Policy"
 layout = "legal"
+
+
+[sitemap]
+  priority = 0.2
+  hangefreq = "yearly"
 +++
 
 ## 1. Introduction

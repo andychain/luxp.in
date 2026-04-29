@@ -1,6 +1,11 @@
 +++
 title = "Terms of Use"
 layout = "legal"
+
+
+[sitemap]
+  priority = 0.2
+  hangefreq = "yearly"
 +++
 
 ## 1. Acceptance of Terms
