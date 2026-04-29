@@ -1,6 +1,7 @@
 baseURL = 'https://luxp.in/'
 locale = 'en-us'
 title = 'luxpin'
+enableGitInfo = true
 
 [sitemap]
   changefreq = 'weekly'
