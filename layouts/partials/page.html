@@ -162,7 +162,7 @@
       {{- $badgeLabel  := index $badgeLabels $badge -}}
       {{- $badgeClass  := index $badgeClasses $badge -}}
 
-      <div class="casino-card" data-tags="{{ delimit .Params.tags "," }}" onclick="window.open('{{ $dest }}','_blank')">
+      <div class="casino-card" data-tags="{{ delimit .Params.tags "," }}" onclick="window.location='{{ .RelPermalink }}'">
         <div class="card-inner">
           <div class="card-top">
             <div class="card-favicon">
@@ -176,8 +176,8 @@
             </div>
             <div class="card-name-block">
               <div class="card-name">{{ .Title }}</div>
-              <a class="card-url" href="{{ $dest }}" target="_blank" onclick="event.stopPropagation()">
-                {{ .Params.url_label }} <span class="card-url-arrow">↗</span>
+              <a class="card-url" href="{{ .RelPermalink }}" onclick="event.stopPropagation()">
+                {{ .Params.url_label }} <span class="card-url-arrow">→</span>
               </a>
             </div>
             {{- if $badgeLabel -}}

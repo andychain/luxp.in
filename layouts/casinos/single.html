@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Title }} Review | Luxpin</title>
+  <meta name="description" content="{{ .Plain | truncate 155 }}" />
+  <meta property="og:title" content="{{ .Title }} Review | Luxpin" />
+  <meta property="og:description" content="{{ .Plain | truncate 155 }}" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}" />
+  <link rel="manifest" href="{{ "site.webmanifest" | relURL }}" />
+  <meta name="apple-mobile-web-app-title" content="Luxpin" />
+  <meta name="application-name" content="Luxpin" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSQT12KZKE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GSQT12KZKE');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+  <style>
+    .single-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .single-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 36px;
+      transition: color var(--transition);
+    }
+    .single-back:hover { color: var(--text); }
+    .single-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .single-logo {
+      width: 72px;
+      height: 72px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .single-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .single-logo-fallback {
+      font-family: var(--font-mono);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .single-title-block { flex: 1; min-width: 0; }
+    .single-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 4px;
+    }
+    .single-url-link {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .single-url-link:hover { color: var(--accent); }
+    .single-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 99px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .single-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 28px;
+    }
+    .single-tag {
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 99px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      background: var(--bg2);
+    }
+    .single-desc {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-dim);
+      margin-bottom: 36px;
+    }
+    .single-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .single-cta:hover { opacity: 0.88; }
+    .single-disclaimer {
+      margin-top: 16px;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+    .single-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+{{- $dest := cond (ne .Params.link "") .Params.link (printf "https://%s" .Params.url_label) -}}
+{{- $words := split .Title " " -}}
+{{- $init  := "" -}}
+{{- range $words -}}{{- $init = printf "%s%s" $init (substr . 0 1) -}}{{- end -}}
+{{- $initials := upper (substr $init 0 2) -}}
+
+{{- $badgeLabels  := dict "top" "★ Top Pick" "hot" "🔥 Hot" "new" "✦ New" -}}
+{{- $badgeClasses := dict "top" "badge-top"  "hot" "badge-hot"  "new" "badge-new" -}}
+{{- $badge       := .Params.badge -}}
+{{- $badgeLabel  := index $badgeLabels $badge -}}
+{{- $badgeClass  := index $badgeClasses $badge -}}
+
+<!-- ══ HEADER ══ -->
+<header>
+  <a class="logo" href="/"><span class="logo-gem"></span>luxpin</a>
+  <div style="flex:1"></div>
+  <div class="header-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+  </div>
+</header>
+
+<!-- ══ MAIN ══ -->
+<main>
+  <div class="single-wrap">
+
+    <a class="single-back" href="javascript:history.back()">← Back</a>
+
+    <div class="single-header">
+      <div class="single-logo">
+        <img
+          src="{{ .Params.img }}"
+          alt="{{ .Title }} logo"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        />
+        <span class="single-logo-fallback" style="display:none">{{ $initials }}</span>
+      </div>
+      <div class="single-title-block">
+        <h1 class="single-title">
+          {{ .Title }}
+          {{- if $badgeLabel -}}
+          <span class="single-badge {{ $badgeClass }}">{{ $badgeLabel }}</span>
+          {{- end -}}
+        </h1>
+        <a class="single-url-link" href="{{ $dest }}" target="_blank" rel="noopener noreferrer">
+          {{ .Params.url_label }} ↗
+        </a>
+      </div>
+    </div>
+
+    {{- if .Params.tags -}}
+    <div class="single-tags">
+      {{- range .Params.tags -}}
+      <span class="single-tag">{{ . }}</span>
+      {{- end -}}
+    </div>
+    {{- end -}}
+
+    <div class="single-desc">{{ .Content }}</div>
+
+    <div class="single-divider"></div>
+
+    <a class="single-cta" href="{{ $dest }}" target="_blank" rel="noopener noreferrer sponsored">
+      Visit {{ .Title }} ↗
+    </a>
+    <p class="single-disclaimer">Affiliate link — we may earn a commission at no cost to you.</p>
+
+  </div>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/"><span class="logo-gem"></span>luxpin</a>
+    </div>
+    <p class="footer-copy">© {{ now.Year }} Luxpin. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>

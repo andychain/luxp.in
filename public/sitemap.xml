@@ -1,213 +1,333 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://localhost:1313/casinos/bc-game/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/betfury/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/betpanda/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/stake/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/gamdom/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/metawin/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/roobet/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/rollbit/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/paradex/</loc>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/edgex/</loc>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/hyperliquid/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/luxdrop/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/jemlit/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/cases/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/bigbux/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/rillabox/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/packdraw/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/hypedrop/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/empiredrop/</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>1</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/au/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/au/hot/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/au/new/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/au/top/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/hot/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/in/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/in/hot/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/in/new/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/in/top/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/new/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/nz/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/nz/hot/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/nz/new/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/nz/top/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/top/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/uk/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/uk/hot/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/uk/new/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/uk/top/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/us/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/us/hot/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/us/new/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/us/top/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/disclosure/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/casinos/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/cookies/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/lottery/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/mystery-box/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/perp-dex/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/privacy/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/slots/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/sports/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>http://localhost:1313/terms/</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.2</priority>
   </url>
 </urlset>
