@@ -103,7 +103,7 @@
 </div>
 
 <!-- ══ MAIN ══ -->
-{{- $all     := sort (where site.RegularPages "Section" "casinos") "Weight" -}}
+{{- $all     := sort (where site.RegularPages "Section" "p") "Weight" -}}
 {{- $bycountry := where $all ".Params.countries" "intersect" (slice $code) -}}
 {{- $casinos := where $bycountry ".Params.badge" "eq" "hot" -}}
 

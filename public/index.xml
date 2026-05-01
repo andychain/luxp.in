@@ -9,135 +9,135 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BC.GAME</title>
-      <link>http://localhost:1313/casinos/bc-game/</link>
+      <link>http://localhost:1313/p/bc-game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/bc-game/</guid>
+      <guid>http://localhost:1313/p/bc-game/</guid>
       <description>&lt;p&gt;BC.Game is a crypto-first online casino offering provably fair games, instant cryptocurrency deposits and withdrawals, and a wide selection of slots, live dealer games, and in-house originals. Known for its fast gameplay and low entry barriers, it is popular among crypto users but restricts access in certain regions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>BetFury</title>
-      <link>http://localhost:1313/casinos/betfury/</link>
+      <link>http://localhost:1313/p/betfury/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/betfury/</guid>
+      <guid>http://localhost:1313/p/betfury/</guid>
       <description>&lt;p&gt;BetFury is an online crypto gambling and gaming platform that allows users to play casino-style games, place bets, and earn rewards using cryptocurrencies like Bitcoin. It combines traditional online casino features with blockchain-based elements, including its native BFG token, which users can earn and stake for dividends. The platform is known for its reward system, promotions, and integration of decentralized finance concepts into gaming.&lt;/p&gt;</description>
     </item>
     <item>
       <title>BetPanda</title>
-      <link>http://localhost:1313/casinos/betpanda/</link>
+      <link>http://localhost:1313/p/betpanda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/betpanda/</guid>
+      <guid>http://localhost:1313/p/betpanda/</guid>
       <description>&lt;p&gt;BetPanda is an online crypto-based casino and sportsbook launched around 2023, offering thousands of games (slots, live casino, and sports betting) and supporting deposits and withdrawals in cryptocurrencies. It emphasizes fast transactions, user anonymity (minimal or no KYC), and a wide range of betting options, including esports and live betting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stake</title>
-      <link>http://localhost:1313/casinos/stake/</link>
+      <link>http://localhost:1313/p/stake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/stake/</guid>
+      <guid>http://localhost:1313/p/stake/</guid>
       <description>&lt;p&gt;Stake is a global crypto casino and sportsbook where users gamble online using cryptocurrencies. It offers a wide range of slots, live dealer tables, and sports betting markets, and is well known for its loyalty program and high-profile sponsorships.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gamdom</title>
-      <link>http://localhost:1313/casinos/gamdom/</link>
+      <link>http://localhost:1313/p/gamdom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/gamdom/</guid>
+      <guid>http://localhost:1313/p/gamdom/</guid>
       <description>&lt;p&gt;Gamdom is an online crypto-based gambling platform that offers casino games, sports betting, and esports wagering. Founded in 2016, it originally focused on CS:GO skin betting but has since evolved into a full-scale crypto casino with thousands of games, live betting options, and cryptocurrency payments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MetaWin</title>
-      <link>http://localhost:1313/casinos/metawin/</link>
+      <link>http://localhost:1313/p/metawin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/metawin/</guid>
+      <guid>http://localhost:1313/p/metawin/</guid>
       <description>&lt;p&gt;MetaWin is a crypto-powered online gaming and rewards platform where users can play casino-style games, enter competitions, and win prizes using blockchain technology. It focuses on transparent, provably fair gameplay and often integrates cryptocurrency wallets for deposits and payouts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Roobet</title>
-      <link>http://localhost:1313/casinos/roobet/</link>
+      <link>http://localhost:1313/p/roobet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/roobet/</guid>
+      <guid>http://localhost:1313/p/roobet/</guid>
       <description>&lt;p&gt;Roobet is an online crypto casino platform where users can play games like slots, roulette, and live dealer games using cryptocurrencies. It also offers a proprietary game called Crash, where players bet on a rising multiplier and cash out before it drops.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rollbit</title>
-      <link>http://localhost:1313/casinos/rollbit/</link>
+      <link>http://localhost:1313/p/rollbit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/rollbit/</guid>
+      <guid>http://localhost:1313/p/rollbit/</guid>
       <description>&lt;p&gt;Rollbit is a crypto-based online platform where users can gamble, bet on sports, and trade crypto using digital currencies instead of traditional money. It features unique in-house games alongside a full sportsbook and NFT marketplace integration.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paradex</title>
-      <link>http://localhost:1313/casinos/paradex/</link>
+      <link>http://localhost:1313/p/paradex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/paradex/</guid>
+      <guid>http://localhost:1313/p/paradex/</guid>
       <description>&lt;p&gt;Paradex is a decentralized derivatives exchange (Perp DEX) that lets users trade perpetual futures, options, and spot markets with self-custody, combining CEX-like speed with on-chain settlement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>edgeX</title>
-      <link>http://localhost:1313/casinos/edgex/</link>
+      <link>http://localhost:1313/p/edgex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/edgex/</guid>
+      <guid>http://localhost:1313/p/edgex/</guid>
       <description>&lt;p&gt;EdgeX is a high-performance Perp DEX that combines off-chain order matching with on-chain settlement, offering fast, CEX-like trading with self-custody and deep liquidity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hyperliquid</title>
-      <link>http://localhost:1313/casinos/hyperliquid/</link>
+      <link>http://localhost:1313/p/hyperliquid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/hyperliquid/</guid>
+      <guid>http://localhost:1313/p/hyperliquid/</guid>
       <description>&lt;p&gt;Hyperliquid — A high-performance Perp DEX built on its own Layer 1 blockchain, offering fully on-chain order book trading with CEX-like speed, deep liquidity, and self-custody.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LuxDrop</title>
-      <link>http://localhost:1313/casinos/luxdrop/</link>
+      <link>http://localhost:1313/p/luxdrop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/luxdrop/</guid>
+      <guid>http://localhost:1313/p/luxdrop/</guid>
       <description>&lt;p&gt;LuxDrop is a popular online mystery unboxing platform where you open digital boxes or join PVP battles to win real prizes like luxury fashion, tech, and collectibles. It supports crypto payments and offers provably fair gameplay.&lt;/p&gt;</description>
     </item>
     <item>
       <title>JemLit</title>
-      <link>http://localhost:1313/casinos/jemlit/</link>
+      <link>http://localhost:1313/p/jemlit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/jemlit/</guid>
+      <guid>http://localhost:1313/p/jemlit/</guid>
       <description>&lt;p&gt;Jemlit is an online mystery box platform where users pay to open virtual boxes for a chance to win real products like electronics, fashion items, or gift cards.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cases.gg</title>
-      <link>http://localhost:1313/casinos/cases/</link>
+      <link>http://localhost:1313/p/cases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/cases/</guid>
+      <guid>http://localhost:1313/p/cases/</guid>
       <description>&lt;p&gt;Cases.gg is an online mystery box platform where users deposit money (often crypto), open virtual “cases,” and receive random real-world items such as electronics, fashion, or collectibles.&lt;/p&gt;</description>
     </item>
     <item>
       <title>BigBux</title>
-      <link>http://localhost:1313/casinos/bigbux/</link>
+      <link>http://localhost:1313/p/bigbux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/bigbux/</guid>
+      <guid>http://localhost:1313/p/bigbux/</guid>
       <description>&lt;p&gt;A gamified mystery box platform that lets users buy and open randomized boxes with transparent odds, compete in battles, and win physical prizes or items of varying value.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RillaBox</title>
-      <link>http://localhost:1313/casinos/rillabox/</link>
+      <link>http://localhost:1313/p/rillabox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/rillabox/</guid>
+      <guid>http://localhost:1313/p/rillabox/</guid>
       <description>&lt;p&gt;A Web3 lootbox site where you spend crypto to open randomized boxes for a chance to win physical items or cash-equivalent value.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PackDraw</title>
-      <link>http://localhost:1313/casinos/packdraw/</link>
+      <link>http://localhost:1313/p/packdraw/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/packdraw/</guid>
+      <guid>http://localhost:1313/p/packdraw/</guid>
       <description>&lt;p&gt;A gamified unboxing platform where you open paid digital packs to win random prizes or crypto value.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HypeDrop</title>
-      <link>http://localhost:1313/casinos/hypedrop/</link>
+      <link>http://localhost:1313/p/hypedrop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/hypedrop/</guid>
+      <guid>http://localhost:1313/p/hypedrop/</guid>
       <description>&lt;p&gt;A gamified lootbox site where you open cases for a chance to win physical prizes or crypto value.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EmpireDrop</title>
-      <link>http://localhost:1313/casinos/empiredrop/</link>
+      <link>http://localhost:1313/p/empiredrop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/casinos/empiredrop/</guid>
+      <guid>http://localhost:1313/p/empiredrop/</guid>
       <description>&lt;p&gt;A virtual lootbox platform where you pay to open boxes and win random real-world items with verifiable odds.&lt;/p&gt;</description>
     </item>
     <item>
