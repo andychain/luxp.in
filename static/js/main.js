@@ -7,12 +7,25 @@
 /* ──────────────────────────────────────
    THEME TOGGLE
    ────────────────────────────────────── */
-function toggleTheme() {
-  const html = document.documentElement;
-  const isDark = html.getAttribute('data-theme') === 'dark';
-  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-  document.getElementById('themeBtn').textContent = isDark ? '🌙' : '☀️';
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const btn = document.getElementById('themeBtn');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('luxpin-theme', next);
+  applyTheme(next);
+}
+
+// Sync button icon on load (theme already applied by inline <head> script)
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('luxpin-theme') || 'dark';
+  const btn = document.getElementById('themeBtn');
+  if (btn) btn.textContent = saved === 'dark' ? '☀️' : '🌙';
+});
 
 /* ──────────────────────────────────────
    COUNTRY SWITCHER
