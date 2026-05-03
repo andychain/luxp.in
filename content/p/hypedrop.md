@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "hypedrop.com"
 link: "https://hypedrop.com/r/luxpin"
 badge: "new"
-img: "/img/casinos/hypedrop.png"
+img: "/img/casinos/hypedrop.webp"
 tags: ["Mystery Box"]
 countries: ["ca", "in", "nz", "au"]
 draft: false

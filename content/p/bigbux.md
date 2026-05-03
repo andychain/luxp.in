@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "bigbux.io"
 link: "https://bigbux.io"
 badge: "new"
-img: "/img/casinos/bigbux.png"
+img: "/img/casinos/bigbux.webp"
 tags: ["Mystery Box"]
 countries: ["ca", "nz", "au"]
 draft: false

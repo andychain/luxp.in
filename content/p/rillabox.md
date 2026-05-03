@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "rillabox.com"
 link: "https://rillabox.com/ref/luxpin-YMT"
 badge: "new"
-img: "/img/casinos/rillabox.png"
+img: "/img/casinos/rillabox.webp"
 tags: ["Mystery Box"]
 countries: ["ca", "in", "nz", "au"]
 draft: false

@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "betpanda.io"
 link: "https://betpanda.io/?referral=6JJJQXM&type=registration&modal=user&isReferral=true"
 badge: "new"
-img: "/img/casinos/betpanda.png"
+img: "/img/casinos/betpanda.webp"
 tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false

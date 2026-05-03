@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "packdraw.com"
 link: "https://packdraw.com?ref=48830945"
 badge: "new"
-img: "/img/casinos/packdraw.png"
+img: "/img/casinos/packdraw.webp"
 tags: ["Mystery Box"]
 countries: ["ca", "in", "nz", "au"]
 draft: false

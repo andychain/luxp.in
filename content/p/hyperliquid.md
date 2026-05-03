@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "hyperliquid.xyz"
 link: "https://app.hyperliquid.xyz/trade"
 badge: "hot"
-img: "/img/casinos/hyperliquid.png"
+img: "/img/casinos/hyperliquid.webp"
 tags: ["Perp DEX"]
 countries: ["ca", "au", "nz", "in"]
 draft: false

@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "cases.com"
 link: "https://cases.gg/r/LUXPIN"
 badge: "new"
-img: "/img/casinos/casesgg.png"
+img: "/img/casinos/casesgg.webp"
 tags: ["Mystery Box"]
 countries: ["ca", "nz", "in"]
 draft: false

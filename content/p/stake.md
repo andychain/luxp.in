@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "stake.com"
 link: "https://stake.com/?c=t9Hcn0NQ"
 badge: "hot"
-img: "/img/casinos/stake.png"
+img: "/img/casinos/stake.webp"
 tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false

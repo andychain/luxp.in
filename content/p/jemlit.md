@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "jemlit.com"
 link: "https://jemlit.com/en/a/luxpin"
 badge: "new"
-img: "/img/casinos/jemlit.png"
+img: "/img/casinos/jemlit.webp"
 tags: ["Mystery Box"]
 countries: ["ca", "au", "nz", "in", "us", "uk"]
 draft: false

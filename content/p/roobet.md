@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "roobet.com"
 link: "https://roobet.com/?ref=luxpin"
 badge: "hot"
-img: "/img/casinos/roobet.png"
+img: "/img/casinos/roobet.webp"
 tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false

@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "metawin.com"
 link: "https://metawin.com/529fd94a"
 badge: "new"
-img: "/img/casinos/metawin.png"
+img: "/img/casinos/metawin.webp"
 tags: ["Slots", "Lottery", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false

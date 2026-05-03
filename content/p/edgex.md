@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "edgex.exchange"
 link: "https://pro.edgex.exchange/en-US/referral/513577840"
 badge: "new"
-img: "/img/casinos/edgex.png"
+img: "/img/casinos/edgex.webp"
 tags: ["Perp DEX"]
 countries: ["ca", "au", "nz", "in"]
 draft: false

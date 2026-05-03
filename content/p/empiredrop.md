@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "empiredrop.com"
 link: "https://empiredrop.com?r=RA6IH40B3K"
 badge: "new"
-img: "/img/casinos/empiredrop.png"
+img: "/img/casinos/empiredrop.webp"
 tags: ["Mystery Box"]
 countries: ["ca", "nz", "au", "uk", "us"]
 draft: false

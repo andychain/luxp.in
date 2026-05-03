@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "paradex.trade"
 link: "https://app.paradex.trade/r/luxpin"
 badge: "new"
-img: "/img/casinos/paradex.png"
+img: "/img/casinos/paradex.webp"
 tags: ["Perp DEX"]
 countries: ["au", "nz", "in"]
 draft: false

@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "gamdom.com"
 link: "https://gamdom.com/r/luxpin"
 badge: "top"
-img: "/img/casinos/gamdom.png"
+img: "/img/casinos/gamdom.webp"
 tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false

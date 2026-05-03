@@ -5,7 +5,7 @@ priority: 0.6
 url_label: "rollbit.com"
 link: "https://rollbit.com/referral/luxpin"
 badge: "hot"
-img: "/img/casinos/rollbit.jpg"
+img: "/img/casinos/rollbit.webp"
 tags: ["Slots", "Sports"]
 countries: ["ca", "au", "nz", "in"]
 draft: false
