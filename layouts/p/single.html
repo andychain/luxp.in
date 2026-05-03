@@ -88,20 +88,6 @@
 
   <div class="header-spacer"></div>
 
-  <!-- Country Switcher -->
-  <div class="country-switcher" id="cs">
-    <button class="country-btn" onclick="toggleCS()">
-      <span>🌐</span>
-      <span>Countries</span>
-      <span class="country-chevron">▼</span>
-    </button>
-    <div class="country-dropdown">
-      {{- range $countries -}}
-        <a class="country-item" href="{{ .url }}">{{ .flag }} {{ .name }}</a>
-      {{- end -}}
-    </div>
-  </div>
-
   <!-- Theme Toggle -->
   <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">☀️</button>
 
