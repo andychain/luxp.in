@@ -259,6 +259,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/advertise/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/disclosure/</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -275,6 +287,12 @@
     <lastmod>2026-04-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/how-we-rate/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>http://localhost:1313/tags/lottery/</loc>
