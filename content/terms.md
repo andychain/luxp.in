@@ -22,7 +22,7 @@ You must be of legal age in your jurisdiction to gamble or trade before using an
 
 ## 4. Affiliate Relationships
 
-Luxpin earns commissions when users sign up to listed platforms through our referral links. This does not affect our editorial independence. See our [Affiliate Disclosure](/disclosure) for full details.
+Luxpin earns commissions when users sign up to listed platforms through our referral links. This does not affect our editorial independence. See our [Affiliate Disclosure](/disclosure/) for full details.
 
 ## 5. No Warranties
 

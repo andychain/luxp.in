@@ -20,7 +20,7 @@ Luxpin ("we", "our", "us") is committed to protecting your privacy. This Privacy
 
 ## 3. Cookies
 
-We use cookies to support site functionality and analytics. See our [Cookie Policy](/cookies) for a full breakdown of the cookies we use and how to manage them.
+We use cookies to support site functionality and analytics. See our [Cookie Policy](/cookies/) for a full breakdown of the cookies we use and how to manage them.
 
 ## 4. Affiliate Tracking
 

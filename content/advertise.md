@@ -22,7 +22,7 @@ All placements are clearly marked as advertising in accordance with our disclosu
 
 ## What we don't do.
 
-We do not sell editorial listings. Platforms cannot pay to be added to the directory or to improve their ranking. Advertising and editorial are kept separate. If you're interested in a listing rather than a banner placement, see [How We Rate](/how-we-rate).
+We do not sell editorial listings. Platforms cannot pay to be added to the directory or to improve their ranking. Advertising and editorial are kept separate. If you're interested in a listing rather than a banner placement, see [How We Rate](/how-we-rate/).
 
 ## Get in touch.
 

@@ -41,7 +41,7 @@ Badges are reviewed regularly and can be removed or changed as platforms evolve.
 
 ## Affiliate relationships.
 
-Luxpin earns a commission when you sign up through our links. This does not influence our ratings. Platforms cannot pay to be listed or to improve their score. See our [Affiliate Disclosure](/disclosure) for full details.
+Luxpin earns a commission when you sign up through our links. This does not influence our ratings. Platforms cannot pay to be listed or to improve their score. See our [Affiliate Disclosure](/disclosure/) for full details.
 
 ---
 
