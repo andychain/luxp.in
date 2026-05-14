@@ -4,7 +4,7 @@ weight: 99
 url_label: ""
 link: ""
 badge: ""
-img: "/img/casinos/{{ .Name }}.png"
+img: "/img/casinos/{{ .Name }}.webp"
 tags: []
 countries: ["ca", "au", "nz", "in"]
 draft: false
