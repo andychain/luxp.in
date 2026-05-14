@@ -26,12 +26,12 @@ BC.GAME is one of the biggest crypto-first online casinos in the market, combini
 
 | | |
 |---|---|
-| ⭐ Rating | 9.1/10 |
-| 🎁 Bonus | 300% deposit match for new players |
-| 💰 Crypto | BTC, ETH, LTC, DOGE, SOL, USDT + 100 more |
-| 🎰 Games | 8,000+ slots, live casino, sportsbook, originals |
-| 📱 Mobile | Yes |
-| 🛡️ Provably Fair | Yes |
+| ⭐ Rating: | 9.1/10 |
+| 🎁 Bonus: | 300% deposit match for new players |
+| 💰 Crypto: | BTC, ETH, LTC, DOGE, SOL, USDT + 100 more |
+| 🎰 Games: | 8,000+ slots, live casino, sportsbook, originals |
+| 📱 Mobile: | Yes |
+| 🛡️ Provably Fair: | Yes |
 
 ## What Makes BC.GAME Popular
 
